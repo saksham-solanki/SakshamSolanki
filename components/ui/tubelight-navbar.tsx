@@ -48,7 +48,7 @@ export function NavBar({ items, className }: NavBarProps) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
+      setIsMobile(window.innerWidth < 1024)
     }
     handleResize()
     window.addEventListener("resize", handleResize)
@@ -98,7 +98,7 @@ export function NavBar({ items, className }: NavBarProps) {
 
   const itemClasses = (isActive: boolean) =>
     cn(
-      "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
+      "relative cursor-pointer text-sm font-semibold px-3 lg:px-5 py-2 rounded-full transition-colors whitespace-nowrap",
       "text-text-secondary hover:text-accent",
       isActive && "bg-bg-secondary text-accent",
     )
@@ -111,7 +111,7 @@ export function NavBar({ items, className }: NavBarProps) {
         className,
       )}
     >
-      <div className="relative flex items-center gap-3 bg-bg-primary/80 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg pointer-events-auto">
+      <div className="relative flex items-center gap-1 lg:gap-2 bg-bg-primary/80 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg pointer-events-auto">
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
@@ -137,8 +137,8 @@ export function NavBar({ items, className }: NavBarProps) {
                   }}
                   className={itemClasses(isActive)}
                 >
-                  <span className="hidden md:inline">{item.name}</span>
-                  <span className="md:hidden">
+                  <span className="hidden lg:inline">{item.name}</span>
+                  <span className="lg:hidden">
                     <Icon size={18} strokeWidth={2.5} />
                   </span>
                   {isActive && lampEffect}
@@ -149,8 +149,8 @@ export function NavBar({ items, className }: NavBarProps) {
                   onClick={() => setActiveTab(item.name)}
                   className={itemClasses(isActive)}
                 >
-                  <span className="hidden md:inline">{item.name}</span>
-                  <span className="md:hidden">
+                  <span className="hidden lg:inline">{item.name}</span>
+                  <span className="lg:hidden">
                     <Icon size={18} strokeWidth={2.5} />
                   </span>
                   {isActive && lampEffect}
