@@ -1,0 +1,54 @@
+---
+title: "73% Reduction in Support Resolution Time with AI Triage"
+slug: "saas-support-triage"
+date: "2026-02-15"
+category: "SaaS"
+description: "How we built an AI triage system that cut support ticket resolution time by 73% for a 90-person B2B SaaS company."
+readingTime: "6 min"
+featured: true
+---
+
+## Client Context
+
+A 90-person B2B SaaS company processing 400+ support tickets per week. Their support team of 8 was drowning — average resolution time had crept up to 18 hours, and customer satisfaction was dropping.
+
+**Key metrics: 73% faster resolution | 11 days build time | $340/mo running cost | 89% triage accuracy**
+
+## The Problem
+
+Support tickets arrived through email, in-app chat, and a web form. Each ticket needed to be:
+1. Categorized (bug, feature request, billing, how-to)
+2. Prioritized (critical, high, medium, low)
+3. Routed to the right specialist
+4. Responded to with initial acknowledgment
+
+This triage process took 15-30 minutes per ticket and required experienced support agents. It was the bottleneck — once a ticket reached the right person, resolution was fast.
+
+## The Approach
+
+We built an AI triage agent that handles steps 1-4 automatically. The agent processes every incoming ticket, categorizes and prioritizes it, routes it to the right team member, and sends an initial response within 60 seconds.
+
+## The Architecture
+
+**Input Layer**: Unified intake from all three channels (email via API, chat via webhook, form via API). All tickets normalized into a standard format.
+
+**Classification Engine**: GPT-4 for category and priority classification. We tested against 500 historical tickets and achieved 89% accuracy before launch. The model uses structured output to ensure clean classification.
+
+**Routing Logic**: Deterministic rules based on category, priority, and team member availability. No LLM in the routing — pure business logic.
+
+**Response Generation**: Template-based initial responses with LLM-generated personalization. The templates ensure accuracy; the LLM makes them feel human.
+
+## The Results
+
+After 60 days in production:
+
+- Average resolution time dropped from 18 hours to 4.8 hours (73% reduction)
+- First response time dropped from 2.3 hours to 47 seconds
+- Support team handles 35% more tickets with the same headcount
+- Customer satisfaction score improved from 3.2 to 4.1 (out of 5)
+
+The system runs on AWS Lambda and costs $340/month in API calls. The ROI was clear within the first two weeks.
+
+## Key Takeaway
+
+The biggest win wasn't the AI classification — it was eliminating the triage bottleneck. The support team's expertise was being wasted on routing, not on solving problems. The AI handles the boring part so humans can focus on the hard part.

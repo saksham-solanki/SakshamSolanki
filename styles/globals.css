@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Satoshi from Fontshare CDN */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/D7WD5OXZFWQ5T76HSPWAC7MNKAJXE2YG/LUGNSPO5YC34ABNB2O6K7AFDSOJZT56V/WNDVG7O66ENLOD43GS7FBUCC4KMT5OM2.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://cdn.fontshare.com/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --font-satoshi: 'Satoshi', system-ui, sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-satoshi);
+    background-color: #0A0A0B;
+    color: #E5E5E7;
+    line-height: 1.65;
+  }
+
+  ::selection {
+    background-color: rgba(0, 229, 160, 0.2);
+    color: #FAFAFA;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0A0A0B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A2E;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3A3A3E;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .container-width {
+    @apply max-w-container mx-auto px-5 lg:px-8;
+  }
+
+  /* MDX prose styles */
+  .prose-dark {
+    @apply text-text-secondary leading-relaxed;
+  }
+
+  .prose-dark h2 {
+    @apply text-h2 text-text-primary mt-12 mb-4 border-l-4 border-accent pl-4;
+  }
+
+  .prose-dark h3 {
+    @apply text-h3 text-text-primary mt-8 mb-3;
+  }
+
+  .prose-dark p {
+    @apply mb-5 text-body-lg;
+  }
+
+  .prose-dark a {
+    @apply text-accent hover:text-accent-hover underline-offset-4 hover:underline transition-colors;
+  }
+
+  .prose-dark ul, .prose-dark ol {
+    @apply mb-5 pl-6 space-y-2;
+  }
+
+  .prose-dark li {
+    @apply text-body-lg;
+  }
+
+  .prose-dark blockquote {
+    @apply border-l-4 border-accent pl-5 py-2 my-6 italic text-text-secondary bg-bg-secondary rounded-r-card;
+  }
+
+  .prose-dark pre {
+    @apply bg-bg-tertiary rounded-card p-5 my-6 overflow-x-auto;
+  }
+
+  .prose-dark code {
+    font-family: var(--font-jetbrains);
+    @apply text-sm;
+  }
+
+  .prose-dark :not(pre) > code {
+    @apply bg-bg-tertiary px-1.5 py-0.5 rounded text-accent text-sm;
+  }
+
+  .prose-dark img {
+    @apply rounded-card w-full my-6;
+  }
+
+  .prose-dark hr {
+    @apply border-border my-10;
+  }
+
+  .prose-dark strong {
+    @apply text-text-primary font-semibold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .mint-glow {
+    box-shadow: 0 0 20px rgba(0, 229, 160, 0.15);
+  }
+
+  .mint-glow-lg {
+    box-shadow: 0 0 40px rgba(0, 229, 160, 0.1);
+  }
+}

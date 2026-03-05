@@ -1,0 +1,46 @@
+---
+title: "60 Hours of Manual Work Replaced with AI Content Pipeline"
+slug: "ecommerce-content-automation"
+date: "2026-01-20"
+category: "E-commerce"
+description: "How we automated product description writing and SEO optimization for a D2C brand, saving 60 hours per week of manual work."
+readingTime: "5 min"
+featured: false
+---
+
+## Client Context
+
+A D2C e-commerce brand with 2,000+ SKUs. Their content team spent 60+ hours per week writing product descriptions, optimizing for SEO, and maintaining consistency across their catalog.
+
+**Key metrics: 60hrs saved per week | 2,000+ SKUs processed | 23% organic traffic increase | 8 days build time**
+
+## The Problem
+
+Every new product needed: a product description, SEO-optimized title and meta description, category-appropriate keywords, and cross-sell copy. The content team was producing 40-50 pieces per week but had a backlog of 800+ products with thin or missing content.
+
+## The Approach
+
+We built an automated content pipeline that generates, reviews, and publishes product content at scale. The system processes product data from their PIM, generates content following brand guidelines, runs SEO optimization, and queues content for human review.
+
+## The Architecture
+
+**Data Ingestion**: Connected to their Product Information Management system via API. Product attributes, images, and category data feed the pipeline automatically when new products are added.
+
+**Content Generation**: Claude for long-form descriptions (better at maintaining brand voice), GPT-4 for SEO meta content (better at concise, keyword-optimized text). Each model was prompted with brand guidelines and 50 approved examples.
+
+**Quality Control**: Automated checks for brand voice consistency, keyword density, readability score, and factual accuracy against product specs. Content that passes all checks goes to a review queue; content that fails gets flagged for manual editing.
+
+**Publishing**: Approved content pushes directly to Shopify via API. Includes automatic internal linking and schema markup generation.
+
+## The Results
+
+Within 30 days:
+
+- Content backlog of 800 products cleared in 3 weeks
+- Content team reduced from 60hrs/week to 12hrs/week (review only)
+- Organic search traffic increased 23% within 60 days
+- Product page conversion rate improved 8% with better descriptions
+
+## Key Takeaway
+
+The key wasn't replacing writers — it was replacing the repetitive 80% of writing so the team could focus on hero content, campaign pages, and brand storytelling. AI handles volume; humans handle craft.

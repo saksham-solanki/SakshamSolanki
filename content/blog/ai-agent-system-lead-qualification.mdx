@@ -1,0 +1,68 @@
+---
+title: "How We Built an AI Agent That Books 2x More Meetings"
+slug: "ai-agent-lead-qualification"
+date: "2026-03-01"
+category: "AI Agents"
+description: "A step-by-step breakdown of how we built an AI lead qualification agent for a 40-person SaaS company. Architecture, implementation, and results."
+readingTime: "8 min"
+featured: true
+---
+
+Most AI chatbots fail at lead qualification because they're built as conversation tools, not decision systems.
+
+We took a different approach for a 40-person SaaS company that was losing qualified leads to slow response times. The result: 2x more meetings booked, with faster qualification and zero additional headcount.
+
+## The Problem
+
+The company had a solid inbound flow — about 200 leads per week. But their SDR team of three couldn't respond fast enough. Average response time: 4.2 hours. By the time they reached out, 60% of leads had gone cold or talked to a competitor.
+
+The obvious solution was "hire more SDRs." The smarter solution was to build a system that qualifies and routes leads in under 2 minutes.
+
+## The Architecture
+
+We designed a three-layer agent system:
+
+**Layer 1: Intake Processing**
+Every form submission triggers the agent. It pulls context from the CRM, enriches the company data via Clearbit, and scores the lead against the ICP criteria.
+
+**Layer 2: Qualification Logic**
+The agent runs a structured qualification flow — not a generic chatbot conversation. It asks specific questions mapped to the company's qualification framework (budget, authority, need, timeline). Each response updates the lead score in real-time.
+
+**Layer 3: Routing & Booking**
+Qualified leads get routed to the right SDR based on territory and availability. The agent sends a Calendly link and follows up if no booking is made within 24 hours.
+
+<InlineCTA />
+
+## The Build
+
+Total build time: 11 days. Here's what we used:
+
+- **LLM**: GPT-4 for qualification conversations, GPT-3.5-turbo for routing decisions
+- **Orchestration**: Custom Python agent framework (not LangChain — too much overhead for this use case)
+- **CRM Integration**: HubSpot API for lead data and deal creation
+- **Enrichment**: Clearbit API for company data
+- **Scheduling**: Calendly API for meeting booking
+- **Deployment**: AWS Lambda + API Gateway
+
+The key architectural decision was separating the qualification logic from the conversation. The LLM handles natural language, but the actual qualification rules are deterministic. This gives us reliability without sacrificing conversation quality.
+
+## The Results
+
+After 60 days in production:
+
+- **Response time**: 4.2 hours → 47 seconds
+- **Meetings booked**: 2.1x increase
+- **Qualification accuracy**: 89% (validated by SDR team)
+- **Cost**: $340/month in API costs vs $5,000/month for an additional SDR
+
+The system now handles 85% of initial lead qualification. The SDR team focuses on high-value conversations with pre-qualified leads instead of chasing cold form submissions.
+
+## What I'd Do Differently
+
+If I built this again, I'd add a feedback loop from closed-won deals back to the qualification model. The current system qualifies based on input criteria, but it doesn't learn which qualification patterns actually convert. That's the next iteration.
+
+The lesson: AI agents work best when they handle specific, well-defined workflows — not when they try to be general-purpose assistants. Scope the problem tightly, build the system around the decision logic, and let the LLM handle the language part.
+
+---
+
+*Want to build something similar? [Join AI Builders Club](/ai-builders-club) for weekly implementation insights, or [book a call](/consulting) to discuss your specific use case.*

@@ -1,0 +1,64 @@
+---
+title: "The 3-Layer AI Agent Architecture That Works in Production"
+slug: "three-layer-agent-architecture"
+date: "2026-01-25"
+category: "AI Agents"
+description: "The architecture pattern behind every production AI agent we've deployed. Perception, reasoning, and action layers explained."
+readingTime: "10 min"
+featured: false
+---
+
+Every production AI agent I've built follows a three-layer architecture. It's not fancy. It's not novel. But it works reliably at scale, which is what matters.
+
+## Layer 1: Perception
+
+The perception layer handles everything between the outside world and your agent's brain. Its job is to take messy, unstructured input and turn it into clean, structured data.
+
+This includes:
+- **Input parsing** — Converting emails, form submissions, chat messages, or API calls into a standard format
+- **Data enrichment** — Pulling context from your CRM, database, or third-party APIs
+- **Classification** — Determining what type of request this is before routing to the right logic
+
+The perception layer should be model-agnostic. If you swap GPT-4 for Claude or a fine-tuned model later, nothing in this layer changes.
+
+## Layer 2: Reasoning
+
+The reasoning layer is where decisions happen. But here's the critical insight: **most of the reasoning should be deterministic, not LLM-generated**.
+
+The LLM handles:
+- Understanding natural language intent
+- Generating human-readable responses
+- Handling edge cases that don't fit clean rules
+
+The deterministic logic handles:
+- Business rules (qualification criteria, routing rules, approval workflows)
+- State management (where are we in the process?)
+- Guardrails (what should the agent never do?)
+
+This split is what makes the difference between a demo and a production system. LLMs are powerful but unpredictable. Business logic needs to be reliable.
+
+<InlineCTA />
+
+## Layer 3: Action
+
+The action layer executes decisions. Every action should be:
+- **Logged** — You need an audit trail
+- **Reversible** — Where possible, actions should be undoable
+- **Confirmed** — High-stakes actions get human approval
+
+Common actions include:
+- Creating or updating CRM records
+- Sending emails or messages
+- Booking meetings
+- Creating support tickets
+- Triggering downstream workflows
+
+## Putting It Together
+
+The flow is always: **Perceive → Reason → Act**. Each layer has clear responsibilities and clean interfaces. You can test each layer independently, swap components without breaking others, and debug issues by tracing through the three layers.
+
+This isn't the only way to build AI agents. But after deploying 50+ systems, it's the pattern that consistently ships on time and works reliably in production.
+
+---
+
+*Get architecture patterns like this every week. [Subscribe to AI Builders Club](/ai-builders-club).*
