@@ -6,7 +6,7 @@ export const siteConfig = {
   ogImage: '/og/default.png',
   links: {
     twitter: 'https://twitter.com/sakshamsolanki',
-    linkedin: 'https://linkedin.com/in/sakshamsolanki',
+    linkedin: 'https://www.linkedin.com/in/samsolanki/',
     youtube: 'https://youtube.com/@sakshamsolanki',
     skool: 'https://www.skool.com/ai-builders-club',
     newsletter: 'https://aibuilders.beehiiv.com',
@@ -20,6 +20,7 @@ export const siteConfig = {
 }
 
 export const navLinks = [
+  { href: '/services', label: 'Services' },
   { href: '/blog', label: 'Blog' },
   { href: '/case-studies', label: 'Case Studies' },
   { href: '/ai-builders-club', label: 'AI Builders Club' },

@@ -64,6 +64,7 @@ const config: Config = {
       },
       animation: {
         spotlight: 'spotlight 2s ease .75s 1 forwards',
+        marquee: 'marquee 30s linear infinite',
       },
       keyframes: {
         spotlight: {
@@ -75,6 +76,10 @@ const config: Config = {
             opacity: '1',
             transform: 'translate(-50%, -40%) scale(1)',
           },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Users, Mail, Zap, Target, TrendingUp } from 'lucide-react'
+import { ArrowRight, Users, Mail, Bot, Target, Code, Rocket, Megaphone } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
@@ -30,7 +30,7 @@ export default function HomePage() {
       <section className="relative">
         {/* Subtle grid background */}
         <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)`,
             backgroundSize: '40px 40px',
@@ -177,52 +177,70 @@ export default function HomePage() {
         </Section>
       )}
 
-      {/* What I Do Section (if no case studies yet) */}
-      {caseStudies.length === 0 && (
-        <Section className="bg-bg-secondary/50">
-          <Container>
-            <SectionLabel>What I Build</SectionLabel>
-            <h2 className="text-h1 text-text-primary mt-4 mb-10">
-              AI systems for B2B companies
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: Target,
-                  title: 'AI Audit & Strategy',
-                  description: 'Identify where AI creates real ROI in your operations. No generic recommendations — specific, implementable architecture.',
-                },
-                {
-                  icon: Zap,
-                  title: 'Implementation Sprint',
-                  description: 'From architecture to deployed system in weeks, not months. Production-grade AI agents, workflows, and integrations.',
-                },
-                {
-                  icon: TrendingUp,
-                  title: 'Ongoing AI Ops',
-                  description: 'Continuous optimization, monitoring, and expansion of your AI infrastructure. Systems that improve over time.',
-                },
-              ].map((service, i) => (
-                <div
-                  key={i}
-                  className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
-                    <service.icon size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-h3 text-text-primary mb-3">{service.title}</h3>
-                  <p className="text-text-secondary text-sm">{service.description}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-10 text-center">
-              <Button href="/consulting">
-                Learn More About Consulting
-              </Button>
-            </div>
-          </Container>
-        </Section>
-      )}
+      {/* Services Overview */}
+      <Section className="bg-bg-secondary/50">
+        <Container>
+          <SectionLabel>Services</SectionLabel>
+          <h2 className="text-h1 text-text-primary mt-4 mb-4">
+            Full-stack AI and software — one team
+          </h2>
+          <p className="text-text-secondary max-w-2xl mb-10">
+            AI agents, custom software, MVP launches, and marketing systems.
+            Everything you need to build and grow, without juggling vendors.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="/services#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
+                <Bot size={20} className="text-accent" />
+              </div>
+              <h3 className="text-h3 text-text-primary mb-3">AI Solutions</h3>
+              <p className="text-text-secondary text-sm mb-4">Voice agents, chat agents, autonomous workflows, and AI consulting. Systems that run in production.</p>
+              <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
+            </a>
+
+            <a href="/services#ai-marketing" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
+                <Target size={20} className="text-accent" />
+              </div>
+              <h3 className="text-h3 text-text-primary mb-3">AI for Marketing</h3>
+              <p className="text-text-secondary text-sm mb-4">Lead scoring, content generation, campaign optimization, and event marketing automation.</p>
+              <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
+            </a>
+
+            <a href="/services#software-development" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
+                <Code size={20} className="text-accent" />
+              </div>
+              <h3 className="text-h3 text-text-primary mb-3">Custom Software</h3>
+              <p className="text-text-secondary text-sm mb-4">Mobile apps, SaaS platforms, websites, e-commerce, and enterprise software. Built for scale.</p>
+              <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
+            </a>
+
+            <a href="/services#startup-services" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
+                <Rocket size={20} className="text-accent" />
+              </div>
+              <h3 className="text-h3 text-text-primary mb-3">Product &amp; Startups</h3>
+              <p className="text-text-secondary text-sm mb-4">MVP in 60 days, fractional CTO, startup AI toolkit, and go-to-market strategy.</p>
+              <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
+            </a>
+
+            <a href="/services#marketing-solutions" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
+                <Megaphone size={20} className="text-accent" />
+              </div>
+              <h3 className="text-h3 text-text-primary mb-3">Marketing</h3>
+              <p className="text-text-secondary text-sm mb-4">AI-powered marketing, paid ads, email campaigns, content, SEO, and social media management.</p>
+              <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
+            </a>
+          </div>
+          <div className="mt-10 text-center">
+            <Button href="/services">
+              View All Services
+            </Button>
+          </div>
+        </Container>
+      </Section>
 
       {/* Newsletter CTA */}
       <NewsletterSignup />

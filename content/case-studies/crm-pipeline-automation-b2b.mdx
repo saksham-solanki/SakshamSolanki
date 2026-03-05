@@ -1,0 +1,100 @@
+---
+title: "Automating a 6-Stage Sales Pipeline That Now Books 3x More Qualified Meetings"
+slug: "crm-pipeline-automation-b2b"
+date: "2026-02-05"
+category: "AI Automation"
+industry: "B2B Sales"
+description: "A B2B consultancy with a 12-person sales team was manually managing leads across spreadsheets, email, and WhatsApp. We deployed an automated CRM pipeline that tripled their qualified meeting rate."
+readingTime: "8 min"
+metrics:
+  - label: "Qualified meetings increase"
+    value: "3x"
+  - label: "Lead response time"
+    value: "< 5 min"
+  - label: "Manual follow-up hours saved/week"
+    value: "40 hrs"
+  - label: "Pipeline visibility"
+    value: "100%"
+featured: false
+---
+
+## The Problem
+
+A B2B consultancy with 12 sales reps was generating 600+ leads per month from web forms, LinkedIn, referrals, and events. But their sales infrastructure was held together by spreadsheets and willpower:
+
+- **Leads lived in 4 different places:** Google Sheets, personal email inboxes, WhatsApp chats, and sticky notes
+- **No lead scoring:** every lead got the same treatment, meaning reps wasted hours chasing cold inquiries while hot leads went cold
+- **Average follow-up time: 28 hours.** Research shows leads contacted within 5 minutes are 21x more likely to convert.
+- **Zero pipeline visibility:** the sales manager had no idea which deals were in progress, stuck, or dead
+- **Follow-up drops:** 43% of leads received exactly one touchpoint and were never contacted again
+
+They were leaving money on the table every single day.
+
+## The Approach
+
+We mapped their entire sales process across 2 days with the team:
+
+1. Lead comes in (web form, LinkedIn DM, referral, event)
+2. Someone (hopefully) notices and adds it to a spreadsheet
+3. Rep reaches out via email or WhatsApp
+4. If the lead responds, a meeting is booked (manually, via back-and-forth messages)
+5. Meeting happens, notes are typed into... another spreadsheet
+6. Follow-up happens if the rep remembers
+
+There were 6 stages in the pipeline, but only stages 1 and 3 happened consistently. Everything else was random. The fix: build a system where every stage is automated or prompted, and nothing falls through the cracks.
+
+## The Architecture
+
+**Automated Lead Capture:**
+- All lead sources (web forms, LinkedIn, email, WhatsApp) feed into a single CRM inbox
+- Leads auto-tagged by source and auto-scored based on: company size, role, budget indicators, engagement signals
+- Hot leads (score 8+) trigger immediate SMS + email alert to the assigned rep
+
+**6-Stage Pipeline with Automation at Every Step:**
+- **Stage 1 — New Lead:** Auto-welcome email sent within 60 seconds. Rep notified via Slack.
+- **Stage 2 — Contacted:** Rep marks as contacted. If no response in 48 hours, auto follow-up #1 fires.
+- **Stage 3 — Qualified:** Lead answers qualification questions (via automated form or call). Score updated.
+- **Stage 4 — Meeting Scheduled:** Calendly link auto-sent. Meeting auto-logged in pipeline.
+- **Stage 5 — Proposal Sent:** Proposal template auto-generated. Follow-up sequence starts.
+- **Stage 6 — Won/Lost:** Outcome logged. Lost leads enter a long-term nurture sequence.
+
+**Automated Follow-Up Engine:**
+- Multi-channel sequences: email → WhatsApp → SMS → email (configurable per stage)
+- Smart timing: messages send during business hours in the lead's timezone
+- Auto-stop: sequences pause when lead responds (prevents embarrassing over-automation)
+- Escalation: if a lead hasn't been touched in 72 hours, the sales manager gets alerted
+
+**Reporting Dashboard:**
+- Real-time pipeline view: how many leads at each stage, total value, average time per stage
+- Rep performance: response times, conversion rates, activity metrics
+- Revenue forecasting based on pipeline stage and historical conversion rates
+
+**Tech Stack:** Custom CRM (Node.js + React), PostgreSQL, Twilio (SMS), WhatsApp Business API, Calendly API, Slack webhooks, automated email via SendGrid.
+
+## The Build
+
+Deployed in 52 days:
+
+- **Week 1–2:** CRM backend + pipeline stages + lead capture integrations
+- **Week 3–4:** Automation engine (follow-up sequences, scoring, notifications)
+- **Week 4–5:** Dashboard + reporting + Calendly integration
+- **Week 6–7:** WhatsApp integration + testing + team training + rollout
+
+Training was critical. We ran 3 workshops with the sales team: how to use the pipeline, how to read the dashboard, and most importantly, how to trust the automation (many reps initially wanted to "manually check" everything).
+
+## The Results
+
+After 90 days:
+
+- **Qualified meetings: 45/month → 138/month (3x increase).** Not more leads — same leads, better follow-up.
+- **Lead response time: 28 hours → under 5 minutes.** The auto-welcome email buys time while the rep is notified.
+- **40 hours/week of manual follow-up eliminated.** Reps no longer track who they need to email next — the system tells them.
+- **Pipeline visibility: 0% → 100%.** The sales manager now sees every deal, every stage, in real-time.
+- **Follow-up completion: 57% → 94%.** No lead gets abandoned. Every lead receives at minimum 5 touchpoints before being marked cold.
+- **Revenue per rep up 2.4x** — same team, same leads, dramatically better execution.
+
+## The Takeaway
+
+This company didn't have a lead generation problem. They had a lead management problem. They were generating 600 leads/month and converting a fraction because their follow-up was manual, inconsistent, and slow.
+
+The CRM didn't make the reps better at selling. It made sure every rep consistently executed the process that already worked when they did it. Automation doesn't replace sales talent — it removes the operational gaps where good leads die silently.

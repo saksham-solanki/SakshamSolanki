@@ -37,14 +37,15 @@ const resources: Record<string, { title: string; description: string; format: st
 }
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
   return Object.keys(resources).map(slug => ({ slug }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params
   const resource = resources[params.slug]
   if (!resource) return {}
   return generateSEO({
@@ -54,7 +55,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   })
 }
 
-export default function ResourcePage({ params }: Props) {
+export default async function ResourcePage(props: Props) {
+  const params = await props.params
   const resource = resources[params.slug]
   if (!resource) notFound()
 

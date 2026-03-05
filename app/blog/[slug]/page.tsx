@@ -14,7 +14,7 @@ import { BlogCard } from '@/components/blog/BlogCard'
 import { generateSEO, generateArticleSchema, generateBreadcrumbSchema } from '@/lib/seo'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
   return posts.map(post => ({ slug: post.meta.slug }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params
   const post = getPostBySlug('blog', params.slug)
   if (!post) return {}
   return generateSEO({
@@ -39,7 +40,8 @@ const mdxComponents = {
   InlineCTA,
 }
 
-export default function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage(props: Props) {
+  const params = await props.params
   const post = getPostBySlug('blog', params.slug)
   if (!post) notFound()
 

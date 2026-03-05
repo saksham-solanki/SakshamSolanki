@@ -9,6 +9,7 @@ export interface PostMeta {
   slug: string
   date: string
   category: string
+  industry?: string
   description: string
   readingTime: string
   featured: boolean
@@ -36,6 +37,7 @@ function getContentFromDir(dir: string): Post[] {
         slug: data.slug || filename.replace('.mdx', ''),
         date: data.date || '',
         category: data.category || '',
+        industry: data.industry || '',
         description: data.description || '',
         readingTime: data.readingTime || '5 min',
         featured: data.featured || false,

@@ -50,7 +50,7 @@ export function HeroScroll() {
           <div className="mt-10 flex flex-wrap items-center gap-6 text-text-tertiary text-sm">
             <div className="flex items-center gap-2">
               <Users size={16} className="text-accent" />
-              <span>500+ community members</span>
+              <span>500+ newsletter subscribers</span>
             </div>
             <div className="flex items-center gap-2">
               <Zap size={16} className="text-accent" />

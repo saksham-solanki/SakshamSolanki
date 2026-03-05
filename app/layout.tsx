@@ -56,7 +56,7 @@ export default function RootLayout({
       </head>
       <body className="bg-bg-primary text-text-secondary font-body antialiased">
         <TubelightNav />
-        <main className="min-h-screen pt-20">
+        <main className="min-h-screen pt-20 pb-24 sm:pb-0">
           {children}
         </main>
         <Footer />

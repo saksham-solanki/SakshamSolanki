@@ -14,7 +14,7 @@ import { generateSEO } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
   return posts.map(post => ({ slug: post.meta.slug }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params
   const post = getPostBySlug('case-studies', params.slug)
   if (!post) return {}
   return generateSEO({
@@ -37,7 +38,8 @@ const mdxComponents = {
   MetricsBar,
 }
 
-export default function CaseStudyPage({ params }: Props) {
+export default async function CaseStudyPage(props: Props) {
+  const params = await props.params
   const post = getPostBySlug('case-studies', params.slug)
   if (!post) notFound()
 
