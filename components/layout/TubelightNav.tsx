@@ -7,6 +7,7 @@ import {
   Smartphone, Cloud, Globe, Palette, ShoppingCart, Building2,
   Rocket, UserCog, Lightbulb, Target,
   Sparkles, Megaphone, Mail, Share2, Presentation,
+  Brain, Code2, Monitor, Settings,
 } from "lucide-react"
 import { NavBar } from "@/components/ui/tubelight-navbar"
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
@@ -83,7 +84,37 @@ const navItems = [
   },
   { name: "AI Builders Club", url: "/ai-builders-club", icon: Users },
   { name: "Case Studies", url: "/case-studies", icon: Briefcase },
-  { name: "Consulting", url: "/consulting", icon: Phone },
+  {
+    name: "Consulting",
+    url: "/consulting",
+    icon: Phone,
+    megaMenu: [
+      {
+        category: "AI Solutions",
+        url: "/consulting#ai-solutions",
+        icon: Bot,
+        services: [],
+      },
+      {
+        category: "Moonship MVP",
+        url: "/consulting#moonship",
+        icon: Rocket,
+        services: [],
+      },
+      {
+        category: "CTO as a Service",
+        url: "/consulting#cto",
+        icon: Brain,
+        services: [],
+      },
+      {
+        category: "Custom Development",
+        url: "/consulting#enterprise",
+        icon: Code2,
+        services: [],
+      },
+    ],
+  },
   { name: "Blog", url: "/blog", icon: FileText },
   { name: "About", url: "/about", icon: User },
 ]

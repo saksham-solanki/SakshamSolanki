@@ -8,9 +8,10 @@ export const siteConfig = {
     twitter: 'https://twitter.com/sakshamsolanki',
     linkedin: 'https://www.linkedin.com/in/samsolanki/',
     youtube: 'https://youtube.com/@sakshamsolanki',
-    skool: 'https://www.skool.com/ai-builders-club',
+    skool: 'https://www.skool.com/ai-builders-club-3219',
     newsletter: 'https://aibuilders.beehiiv.com',
-    calendly: 'https://calendly.com/sakshamsolanki/consulting',
+    calendly: 'https://calendly.com/work-samsolanki/30min',
+    beehiivMagic: 'https://magic.beehiiv.com/v1/0f35a2f0-422a-44cb-be39-e45c6d09d2da',
   },
   author: {
     name: 'Saksham Solanki',

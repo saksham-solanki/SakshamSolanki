@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Users, Mail, Bot, Target, Code, Rocket, Megaphone } from 'lucide-react'
+import { ArrowRight, Users, Mail, Bot, Target, Code, Rocket, Megaphone, Phone, User } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
@@ -115,68 +115,6 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* Featured Case Studies */}
-      {caseStudies.length > 0 && (
-        <Section className="bg-bg-secondary/50">
-          <Container>
-            <SectionLabel>Case Studies</SectionLabel>
-            <div className="flex items-end justify-between mt-4 mb-10">
-              <h2 className="text-h1 text-text-primary">
-                Systems that shipped
-              </h2>
-              <Link
-                href="/case-studies"
-                className="hidden sm:flex items-center gap-1 text-accent text-sm font-medium hover:gap-2 transition-all"
-              >
-                View all <ArrowRight size={16} />
-              </Link>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {caseStudies.map(cs => (
-                <CaseStudyCard key={cs.meta.slug} post={cs.meta} />
-              ))}
-            </div>
-            <Link
-              href="/case-studies"
-              className="flex sm:hidden items-center gap-1 text-accent text-sm font-medium mt-8 hover:gap-2 transition-all"
-            >
-              View all case studies <ArrowRight size={16} />
-            </Link>
-          </Container>
-        </Section>
-      )}
-
-      {/* Latest Blog Posts */}
-      {blogPosts.length > 0 && (
-        <Section>
-          <Container>
-            <SectionLabel>From the Blog</SectionLabel>
-            <div className="flex items-end justify-between mt-4 mb-10">
-              <h2 className="text-h1 text-text-primary">
-                What&apos;s working in AI right now
-              </h2>
-              <Link
-                href="/blog"
-                className="hidden sm:flex items-center gap-1 text-accent text-sm font-medium hover:gap-2 transition-all"
-              >
-                View all <ArrowRight size={16} />
-              </Link>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              {blogPosts.map(post => (
-                <BlogCard key={post.meta.slug} post={post.meta} />
-              ))}
-            </div>
-            <Link
-              href="/blog"
-              className="flex sm:hidden items-center gap-1 text-accent text-sm font-medium mt-8 hover:gap-2 transition-all"
-            >
-              View all posts <ArrowRight size={16} />
-            </Link>
-          </Container>
-        </Section>
-      )}
-
       {/* Services Overview */}
       <Section className="bg-bg-secondary/50">
         <Container>
@@ -238,6 +176,153 @@ export default function HomePage() {
             <Button href="/services">
               View All Services
             </Button>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Featured Case Studies */}
+      {caseStudies.length > 0 && (
+        <Section>
+          <Container>
+            <SectionLabel>Case Studies</SectionLabel>
+            <div className="flex items-end justify-between mt-4 mb-10">
+              <h2 className="text-h1 text-text-primary">
+                Systems that shipped
+              </h2>
+              <Link
+                href="/case-studies"
+                className="hidden sm:flex items-center gap-1 text-accent text-sm font-medium hover:gap-2 transition-all"
+              >
+                View all <ArrowRight size={16} />
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {caseStudies.map(cs => (
+                <CaseStudyCard key={cs.meta.slug} post={cs.meta} />
+              ))}
+            </div>
+            <Link
+              href="/case-studies"
+              className="flex sm:hidden items-center gap-1 text-accent text-sm font-medium mt-8 hover:gap-2 transition-all"
+            >
+              View all case studies <ArrowRight size={16} />
+            </Link>
+          </Container>
+        </Section>
+      )}
+
+      {/* Consulting */}
+      <Section className="bg-bg-secondary/50">
+        <Container>
+          <SectionLabel>Consulting</SectionLabel>
+          <h2 className="text-h1 text-text-primary mt-4 mb-4">
+            Talk to Saksham before implementing AI
+          </h2>
+          <p className="text-text-secondary max-w-2xl mb-10">
+            Get a clear roadmap before you spend a dollar on AI.
+            Strategy, architecture, and hands-on implementation — from someone who&apos;s deployed 50+ systems.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="/consulting#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                <Bot size={20} className="text-accent" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">AI Solutions</h3>
+              <p className="text-text-secondary text-sm">Audit your workflows, identify high-ROI automation opportunities, and build an implementation plan.</p>
+            </a>
+
+            <a href="/consulting#moonship" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                <Rocket size={20} className="text-accent" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Moonship MVP</h3>
+              <p className="text-text-secondary text-sm">Go from idea to deployed product in 60 days. Validated, built, and launched.</p>
+            </a>
+
+            <a href="/consulting#cto" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                <User size={20} className="text-accent" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">CTO as a Service</h3>
+              <p className="text-text-secondary text-sm">Fractional technical leadership for startups that need senior engineering direction without a full-time hire.</p>
+            </a>
+
+            <a href="/consulting#enterprise" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
+                <Code size={20} className="text-accent" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Custom Development</h3>
+              <p className="text-text-secondary text-sm">End-to-end software development for complex projects. Architecture, build, deploy, maintain.</p>
+            </a>
+          </div>
+          <div className="mt-10 text-center">
+            <Button href={siteConfig.links.calendly} external>
+              Book a Free Strategy Call
+            </Button>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Latest Blog Posts */}
+      {blogPosts.length > 0 && (
+        <Section>
+          <Container>
+            <SectionLabel>From the Blog</SectionLabel>
+            <div className="flex items-end justify-between mt-4 mb-10">
+              <h2 className="text-h1 text-text-primary">
+                What&apos;s working in AI right now
+              </h2>
+              <Link
+                href="/blog"
+                className="hidden sm:flex items-center gap-1 text-accent text-sm font-medium hover:gap-2 transition-all"
+              >
+                View all <ArrowRight size={16} />
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {blogPosts.map(post => (
+                <BlogCard key={post.meta.slug} post={post.meta} />
+              ))}
+            </div>
+            <Link
+              href="/blog"
+              className="flex sm:hidden items-center gap-1 text-accent text-sm font-medium mt-8 hover:gap-2 transition-all"
+            >
+              View all posts <ArrowRight size={16} />
+            </Link>
+          </Container>
+        </Section>
+      )}
+
+      {/* About */}
+      <Section className="bg-bg-secondary/50">
+        <Container>
+          <SectionLabel>About</SectionLabel>
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-4">
+            <div>
+              <h2 className="text-h1 text-text-primary mb-4">
+                I&apos;m Saksham Solanki
+              </h2>
+              <p className="text-text-secondary mb-4">
+                AI automation systems architect based in India. I help B2B companies with 11–200 employees implement production-grade AI systems that actually generate ROI.
+              </p>
+              <p className="text-text-secondary mb-6">
+                50+ AI systems deployed. $2M+ in client ROI generated. I don&apos;t sell demos or slide decks — I build infrastructure that runs in production and compounds over time.
+              </p>
+              <div className="flex gap-4">
+                <Button href="/about">
+                  Read My Story
+                </Button>
+                <Button href={siteConfig.links.calendly} variant="outlined" external>
+                  Book a Call
+                </Button>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 rounded-card bg-bg-tertiary border border-border flex items-center justify-center">
+                <User size={64} className="text-text-tertiary" />
+              </div>
+            </div>
           </div>
         </Container>
       </Section>

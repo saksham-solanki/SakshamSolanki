@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 import { Button } from '@/components/ui/Button'
+import { BeehiivForm } from '@/components/ui/BeehiivForm'
 import { generateSEO, generateFAQSchema } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
@@ -61,9 +62,7 @@ export default function AIBuildersClubPage() {
             <Button href={siteConfig.links.skool} size="lg" external>
               Join Community on Skool
             </Button>
-            <Button href={siteConfig.links.newsletter} variant="outlined" size="lg" external>
-              Subscribe to Newsletter
-            </Button>
+            <BeehiivForm buttonText="Subscribe to Newsletter" className="w-full sm:w-auto" />
           </div>
         </Container>
       </section>
@@ -131,9 +130,7 @@ export default function AIBuildersClubPage() {
                 ))}
               </ul>
 
-              <Button href={siteConfig.links.newsletter} external className="w-full">
-                Subscribe Free — Every Thursday
-              </Button>
+              <BeehiivForm direction="col" buttonText="Subscribe Free — Every Thursday" buttonClassName="w-full" />
               <p className="text-text-tertiary text-xs text-center mt-3">
                 No spam. Unsubscribe anytime. 500+ operators already in.
               </p>
@@ -209,9 +206,7 @@ export default function AIBuildersClubPage() {
             <Button href={siteConfig.links.skool} size="lg" external>
               Join the Community
             </Button>
-            <Button href={siteConfig.links.newsletter} variant="outlined" size="lg" external>
-              Get the Newsletter
-            </Button>
+            <BeehiivForm buttonText="Get the Newsletter" className="w-full sm:w-auto" />
           </div>
         </Container>
       </Section>
