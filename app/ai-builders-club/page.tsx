@@ -33,7 +33,7 @@ const faqs = [
 
 export const metadata: Metadata = generateSEO({
   title: 'AI Builders Club — Community & Newsletter for AI Operators',
-  description: 'Join 500+ B2B operators implementing AI systems. Free Skool community + weekly newsletter with actionable AI automation insights. No hype, just systems that work.',
+  description: 'Free Skool community + weekly newsletter with actionable AI automation insights for B2B operators implementing AI systems. No hype, just systems that work.',
   path: '/ai-builders-club',
 })
 
@@ -56,7 +56,7 @@ export default function AIBuildersClubPage() {
           </h1>
           <p className="text-xl text-text-secondary leading-relaxed mb-10">
             The community and newsletter for B2B operators implementing AI systems.
-            Join 500+ people who build, not theorize.
+            For people who build, not theorize.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button href={siteConfig.links.skool} size="lg" external>
@@ -132,7 +132,7 @@ export default function AIBuildersClubPage() {
 
               <BeehiivForm direction="col" buttonText="Subscribe Free — Every Thursday" buttonClassName="w-full" />
               <p className="text-text-tertiary text-xs text-center mt-3">
-                No spam. Unsubscribe anytime. 500+ operators already in.
+                No spam. Unsubscribe anytime.
               </p>
             </div>
           </div>
@@ -149,19 +149,19 @@ export default function AIBuildersClubPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                metric: '500+',
-                label: 'Active members',
-                detail: 'B2B operators, founders, and technical leaders',
+                metric: '50+',
+                label: 'AI systems deployed',
+                detail: 'Production-grade systems across B2B industries',
               },
               {
-                metric: '52',
-                label: 'Issues published',
+                metric: 'Weekly',
+                label: 'Newsletter cadence',
                 detail: 'Actionable insights delivered every Thursday',
               },
               {
-                metric: '40%',
-                label: 'Open rate',
-                detail: 'Because the content actually matters',
+                metric: 'Free',
+                label: 'Always',
+                detail: 'Community and newsletter — no strings attached',
               },
             ].map((stat, i) => (
               <div key={i} className="bg-bg-secondary border border-border rounded-card p-8">

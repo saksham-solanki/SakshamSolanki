@@ -16,7 +16,7 @@ export const siteConfig = {
   author: {
     name: 'Saksham Solanki',
     role: 'AI Automation Systems Architect',
-    location: 'India',
+    location: '',
   },
 }
 

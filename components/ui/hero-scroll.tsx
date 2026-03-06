@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import { Users, Zap, TrendingUp } from "lucide-react";
+import { Zap, TrendingUp } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
@@ -48,10 +48,6 @@ export function HeroScroll() {
             />
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-6 text-text-tertiary text-sm">
-            <div className="flex items-center gap-2">
-              <Users size={16} className="text-accent" />
-              <span>500+ newsletter subscribers</span>
-            </div>
             <div className="flex items-center gap-2">
               <Zap size={16} className="text-accent" />
               <span>50+ AI systems deployed</span>

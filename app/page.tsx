@@ -6,19 +6,25 @@ import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
+import { BeehiivForm } from '@/components/ui/BeehiivForm'
 import { BlogCard } from '@/components/blog/BlogCard'
 import { CaseStudyCard } from '@/components/case-studies/CaseStudyCard'
 import { NewsletterSignup } from '@/components/blog/NewsletterSignup'
+import { LogoMarquee } from '@/components/ui/LogoMarquee'
 import { HeroScroll } from '@/components/ui/hero-scroll'
 import { getBlogPosts, getCaseStudies } from '@/lib/mdx'
 import { siteConfig } from '@/lib/constants'
 import { generateSEO } from '@/lib/seo'
 
-export const metadata: Metadata = generateSEO({
-  title: 'AI Automation Consultant for B2B Companies | Saksham Solanki',
-  description: 'I build production-grade AI systems for B2B companies with 11-200 employees. 50+ systems deployed, $2M+ in client ROI generated. Book a free strategy call.',
-  path: '/',
-})
+export const metadata: Metadata = {
+  ...generateSEO({
+    description: 'I build production-grade AI systems for B2B companies with 11-200 employees. 50+ systems deployed, $2M+ in client ROI generated. Book a free strategy call.',
+    path: '/',
+  }),
+  title: {
+    absolute: 'Saksham Solanki | AI Automation Consultant for B2B Companies',
+  },
+}
 
 export default function HomePage() {
   const blogPosts = getBlogPosts().slice(0, 4)
@@ -41,12 +47,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Client Logo Marquee */}
+      <LogoMarquee />
+
       {/* AI Builders Club Section */}
       <Section className="bg-bg-primary">
         <Container>
           <SectionLabel>AI Builders Club</SectionLabel>
           <h2 className="text-h1 text-text-primary mt-4 mb-4">
-            Join 500+ AI operators building together
+            Where AI operators build together
           </h2>
           <p className="text-text-secondary max-w-2xl mb-10">
             The community and newsletter for B2B operators who implement AI systems.
@@ -107,9 +116,7 @@ export default function HomePage() {
                   <span className="text-accent">&#10003;</span> No fluff, no filler
                 </li>
               </ul>
-              <Button href={siteConfig.links.newsletter} external>
-                Subscribe Free
-              </Button>
+              <BeehiivForm direction="col" buttonText="Subscribe Free" buttonClassName="w-full" />
             </div>
           </div>
         </Container>
@@ -304,7 +311,7 @@ export default function HomePage() {
                 I&apos;m Saksham Solanki
               </h2>
               <p className="text-text-secondary mb-4">
-                AI automation systems architect based in India. I help B2B companies with 11–200 employees implement production-grade AI systems that actually generate ROI.
+                AI automation systems architect. I help B2B companies with 11–200 employees implement production-grade AI systems that actually generate ROI.
               </p>
               <p className="text-text-secondary mb-6">
                 50+ AI systems deployed. $2M+ in client ROI generated. I don&apos;t sell demos or slide decks — I build infrastructure that runs in production and compounds over time.

@@ -28,7 +28,7 @@ export function NewsletterSignup({ compact = false }: { compact?: boolean }) {
         </p>
         <BeehiivForm className="max-w-md mx-auto" />
         <p className="text-text-tertiary text-sm mt-4">
-          Join 500+ B2B operators. No spam. Unsubscribe anytime.
+          No spam. Unsubscribe anytime.
         </p>
       </Container>
     </section>

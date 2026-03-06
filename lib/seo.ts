@@ -20,9 +20,7 @@ export function generateSEO({
   publishedTime,
   category,
 }: SEOProps = {}): Metadata {
-  const fullTitle = title
-    ? `${title} | ${siteConfig.name}`
-    : siteConfig.title
+  const fullTitle = title || siteConfig.title
   const fullDescription = description || siteConfig.description
   const url = `${siteConfig.url}${path}`
   const image = ogImage || siteConfig.ogImage

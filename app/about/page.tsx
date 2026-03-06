@@ -9,7 +9,7 @@ import { siteConfig } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
   title: 'About Saksham Solanki — AI Automation Systems Architect',
-  description: 'AI automation systems architect helping B2B companies implement production-grade AI. 50+ systems deployed, 500+ community members. Based in India, building globally.',
+  description: 'AI automation systems architect helping B2B companies implement production-grade AI. 50+ systems deployed, $2M+ in client ROI generated.',
   path: '/about',
 })
 
@@ -33,9 +33,9 @@ export default function AboutPage() {
           <div className="flex flex-wrap items-center gap-6 text-text-tertiary text-sm mb-8">
             <span>50+ AI systems deployed</span>
             <span aria-hidden="true">&middot;</span>
-            <span>500+ community members</span>
-            <span aria-hidden="true">&middot;</span>
             <span>$2M+ in client ROI</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>Building globally</span>
           </div>
 
           <div className="prose-dark space-y-6 text-body-lg">
