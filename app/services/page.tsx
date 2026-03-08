@@ -221,10 +221,10 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-28">
+      <section className="py-10 sm:py-16 lg:py-28">
         <Container className="max-w-3xl">
           <SectionLabel>Services</SectionLabel>
-          <h1 className="text-hero text-text-primary mt-6 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-hero text-text-primary mt-6 mb-6">
             Everything you need to build with AI.
           </h1>
           <p className="text-xl text-text-secondary leading-relaxed mb-8">
@@ -256,9 +256,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Metrics Bar */}
-      <Section className="bg-bg-secondary/50 py-12 lg:py-16">
+      <Section className="bg-bg-secondary/50 !py-8 sm:!py-12 lg:!py-16">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {metrics.map((metric, i) => (
               <div key={i} className="text-center">
                 <div className="text-3xl lg:text-4xl font-black text-accent mb-2">

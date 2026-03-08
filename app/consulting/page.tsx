@@ -322,7 +322,7 @@ export default function ConsultingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-28">
+      <section className="py-10 sm:py-16 lg:py-28">
         <Container className="max-w-4xl">
           <SectionLabel>Consulting</SectionLabel>
           <h1 className="text-3xl sm:text-4xl md:text-hero text-text-primary mt-6 mb-6">

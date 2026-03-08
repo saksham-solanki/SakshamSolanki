@@ -13,7 +13,7 @@ export function HeroScroll() {
   return (
     <div
       ref={heroRef}
-      className="w-full min-h-[600px] md:h-[700px] bg-bg-primary relative overflow-hidden rounded-card border border-border"
+      className="w-full min-h-[480px] sm:min-h-[600px] md:h-[700px] bg-bg-primary relative overflow-hidden rounded-card border border-border"
     >
       <Spotlight
         className="z-20"

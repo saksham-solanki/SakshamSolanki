@@ -6,8 +6,8 @@ import { Container } from '@/components/ui/Container'
 export function Footer() {
   return (
     <footer className="bg-bg-primary border-t border-border">
-      <Container className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <Container className="py-10 sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
           {/* Brand */}
           <div>
             <Link href="/" className="text-text-primary font-bold text-xl tracking-tight">
