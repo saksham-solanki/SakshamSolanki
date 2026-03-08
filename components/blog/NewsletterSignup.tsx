@@ -16,7 +16,7 @@ export function NewsletterSignup({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <section className="bg-bg-secondary border-t border-b border-border py-16 lg:py-20">
+    <section className="bg-bg-secondary border-t border-b border-border py-10 sm:py-16 lg:py-20">
       <Container className="text-center max-w-2xl">
         <SectionLabel>Newsletter</SectionLabel>
         <h2 className="text-h2 text-text-primary mt-4 mb-4">

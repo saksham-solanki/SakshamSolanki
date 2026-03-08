@@ -46,7 +46,7 @@ export default async function CaseStudyPage(props: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24">
         <Container className="max-w-3xl">
           <Link
             href="/case-studies"
@@ -84,7 +84,7 @@ export default async function CaseStudyPage(props: Props) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 lg:py-24 bg-bg-secondary/50">
+      <section className="py-10 sm:py-16 lg:py-24 bg-bg-secondary/50">
         <Container className="text-center max-w-2xl">
           <h2 className="text-h2 text-text-primary mb-4">
             Want results like these?

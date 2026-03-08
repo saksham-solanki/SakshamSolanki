@@ -311,7 +311,7 @@ export default function HomePage() {
                 I&apos;m Saksham Solanki
               </h2>
               <p className="text-text-secondary mb-4">
-                AI automation systems architect. I help B2B companies with 11–200 employees implement production-grade AI systems that actually generate ROI.
+                AI automation systems architect. I help companies implement production-grade AI systems that actually generate ROI.
               </p>
               <p className="text-text-secondary mb-6">
                 50+ AI systems deployed. $2M+ in client ROI generated. I don&apos;t sell demos or slide decks. I build infrastructure that runs in production and compounds over time.

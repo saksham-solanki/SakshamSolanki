@@ -70,7 +70,7 @@ export default async function BlogPostPage(props: Props) {
       />
 
       {/* Hero */}
-      <section className="py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24">
         <Container className="max-w-3xl">
           <Link
             href="/blog"
@@ -116,7 +116,7 @@ export default async function BlogPostPage(props: Props) {
 
       {/* Related Posts */}
       {related.length > 0 && (
-        <section className="py-16 lg:py-24">
+        <section className="py-10 sm:py-16 lg:py-24">
           <Container>
             <h2 className="text-h2 text-text-primary mb-8">Related posts</h2>
             <div className="grid md:grid-cols-3 gap-6">
