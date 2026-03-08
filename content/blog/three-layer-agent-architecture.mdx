@@ -15,9 +15,9 @@ Every production AI agent I've built follows a three-layer architecture. It's no
 The perception layer handles everything between the outside world and your agent's brain. Its job is to take messy, unstructured input and turn it into clean, structured data.
 
 This includes:
-- **Input parsing** — Converting emails, form submissions, chat messages, or API calls into a standard format
-- **Data enrichment** — Pulling context from your CRM, database, or third-party APIs
-- **Classification** — Determining what type of request this is before routing to the right logic
+- **Input parsing**  - Converting emails, form submissions, chat messages, or API calls into a standard format
+- **Data enrichment**  - Pulling context from your CRM, database, or third-party APIs
+- **Classification**  - Determining what type of request this is before routing to the right logic
 
 The perception layer should be model-agnostic. If you swap GPT-4 for Claude or a fine-tuned model later, nothing in this layer changes.
 
@@ -42,9 +42,9 @@ This split is what makes the difference between a demo and a production system. 
 ## Layer 3: Action
 
 The action layer executes decisions. Every action should be:
-- **Logged** — You need an audit trail
-- **Reversible** — Where possible, actions should be undoable
-- **Confirmed** — High-stakes actions get human approval
+- **Logged**  - You need an audit trail
+- **Reversible**  - Where possible, actions should be undoable
+- **Confirmed**  - High-stakes actions get human approval
 
 Common actions include:
 - Creating or updating CRM records

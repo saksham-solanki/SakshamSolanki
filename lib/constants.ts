@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'Saksham Solanki',
-  title: 'Saksham Solanki — AI Automation Systems Architect',
+  title: 'Saksham Solanki | AI Automation Systems Architect',
   description: 'I build AI systems that work. Production-grade AI automation for B2B companies. Consulting, implementation, and ongoing operations.',
   url: 'https://sakshamsolanki.com',
   ogImage: '/og/default.png',

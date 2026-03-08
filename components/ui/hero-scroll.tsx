@@ -1,8 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
 import { Zap, TrendingUp } from "lucide-react";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
 import { useRouter } from "next/navigation";
 
@@ -59,15 +59,11 @@ export function HeroScroll() {
           </div>
         </div>
 
-        {/* Right content */}
-        <div className="flex-1 relative hidden md:flex items-center justify-center">
-          <Image
-            src="/images/hero-illustration.svg"
-            alt="AI systems architecture visualization"
-            width={600}
-            height={500}
-            className="w-full max-w-[500px] h-auto opacity-80"
-            priority
+        {/* Right content — 3D Spline scene */}
+        <div className="flex-1 relative hidden md:block">
+          <SplineScene
+            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            className="w-full h-full"
           />
         </div>
       </div>

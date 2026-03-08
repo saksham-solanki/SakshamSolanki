@@ -14,7 +14,7 @@ We took a different approach for a 40-person SaaS company that was losing qualif
 
 ## The Problem
 
-The company had a solid inbound flow — about 200 leads per week. But their SDR team of three couldn't respond fast enough. Average response time: 4.2 hours. By the time they reached out, 60% of leads had gone cold or talked to a competitor.
+The company had a solid inbound flow  - about 200 leads per week. But their SDR team of three couldn't respond fast enough. Average response time: 4.2 hours. By the time they reached out, 60% of leads had gone cold or talked to a competitor.
 
 The obvious solution was "hire more SDRs." The smarter solution was to build a system that qualifies and routes leads in under 2 minutes.
 
@@ -26,7 +26,7 @@ We designed a three-layer agent system:
 Every form submission triggers the agent. It pulls context from the CRM, enriches the company data via Clearbit, and scores the lead against the ICP criteria.
 
 **Layer 2: Qualification Logic**
-The agent runs a structured qualification flow — not a generic chatbot conversation. It asks specific questions mapped to the company's qualification framework (budget, authority, need, timeline). Each response updates the lead score in real-time.
+The agent runs a structured qualification flow  - not a generic chatbot conversation. It asks specific questions mapped to the company's qualification framework (budget, authority, need, timeline). Each response updates the lead score in real-time.
 
 **Layer 3: Routing & Booking**
 Qualified leads get routed to the right SDR based on territory and availability. The agent sends a Calendly link and follows up if no booking is made within 24 hours.
@@ -38,7 +38,7 @@ Qualified leads get routed to the right SDR based on territory and availability.
 Total build time: 11 days. Here's what we used:
 
 - **LLM**: GPT-4 for qualification conversations, GPT-3.5-turbo for routing decisions
-- **Orchestration**: Custom Python agent framework (not LangChain — too much overhead for this use case)
+- **Orchestration**: Custom Python agent framework (not LangChain  - too much overhead for this use case)
 - **CRM Integration**: HubSpot API for lead data and deal creation
 - **Enrichment**: Clearbit API for company data
 - **Scheduling**: Calendly API for meeting booking
@@ -61,7 +61,7 @@ The system now handles 85% of initial lead qualification. The SDR team focuses o
 
 If I built this again, I'd add a feedback loop from closed-won deals back to the qualification model. The current system qualifies based on input criteria, but it doesn't learn which qualification patterns actually convert. That's the next iteration.
 
-The lesson: AI agents work best when they handle specific, well-defined workflows — not when they try to be general-purpose assistants. Scope the problem tightly, build the system around the decision logic, and let the LLM handle the language part.
+The lesson: AI agents work best when they handle specific, well-defined workflows  - not when they try to be general-purpose assistants. Scope the problem tightly, build the system around the decision logic, and let the LLM handle the language part.
 
 ---
 
