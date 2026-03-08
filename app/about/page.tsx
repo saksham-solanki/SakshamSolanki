@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
@@ -8,7 +9,7 @@ import { generateSEO, generatePersonSchema } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
-  title: 'About Saksham Solanki — AI Automation Systems Architect',
+  title: 'About Saksham Solanki | AI Automation Systems Architect',
   description: 'AI automation systems architect helping B2B companies implement production-grade AI. 50+ systems deployed, $2M+ in client ROI generated.',
   path: '/about',
 })
@@ -24,18 +25,34 @@ export default function AboutPage() {
       />
 
       <Section>
-        <Container className="max-w-3xl">
-          <SectionLabel>About</SectionLabel>
-          <h1 className="text-hero text-text-primary mt-6 mb-4">
-            Saksham Solanki
-          </h1>
-          <p className="text-lg text-accent font-medium mb-4">AI Automation Systems Architect</p>
-          <div className="flex flex-wrap items-center gap-6 text-text-tertiary text-sm mb-8">
-            <span>50+ AI systems deployed</span>
-            <span aria-hidden="true">&middot;</span>
-            <span>$2M+ in client ROI</span>
-            <span aria-hidden="true">&middot;</span>
-            <span>Building globally</span>
+        <Container className="max-w-4xl">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12 mb-12">
+            {/* Left: text content */}
+            <div className="flex-1">
+              <SectionLabel>About</SectionLabel>
+              <h1 className="text-3xl sm:text-4xl md:text-hero text-text-primary mt-6 mb-4">
+                Saksham Solanki
+              </h1>
+              <p className="text-lg text-accent font-medium mb-4">AI Automation Systems Architect</p>
+              <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-text-tertiary text-sm mb-8">
+                <span>50+ AI systems deployed</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>$2M+ in client ROI</span>
+                <span aria-hidden="true">&middot;</span>
+                <span>Building globally</span>
+              </div>
+            </div>
+            {/* Right: portrait frame SVG */}
+            <div className="hidden md:flex items-center justify-center shrink-0">
+              <Image
+                src="/images/about-portrait-frame.svg"
+                alt="Saksham Solanki portrait frame"
+                width={280}
+                height={320}
+                className="w-full max-w-[280px] h-auto opacity-80"
+                priority
+              />
+            </div>
           </div>
 
           <div className="prose-dark space-y-6 text-body-lg">
@@ -51,7 +68,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              Before this, I spent years in B2B growth — understanding what actually moves
+              Before this, I spent years in B2B growth, understanding what actually moves
               the needle for companies with 11 to 200 employees. That context matters.
               Most AI implementations fail not because the technology is wrong, but because
               the person building it doesn&apos;t understand the business problem.
@@ -63,7 +80,7 @@ export default function AboutPage() {
 
             <p>
               I operate as a strategic partner, not a vendor. When you work with me,
-              I personally architect every system. My technical team handles the build —
+              I personally architect every system. My technical team handles the build.
               a group of senior engineers who have shipped AI systems across dozens of industries.
             </p>
 
@@ -77,7 +94,7 @@ export default function AboutPage() {
             </h2>
 
             <p>
-              I run <a href="/ai-builders-club" className="text-accent hover:text-accent-hover">AI Builders Club</a> —
+              I run <a href="/ai-builders-club" className="text-accent hover:text-accent-hover">AI Builders Club</a>,
               a community and newsletter for B2B operators implementing AI systems. Over 500 members.
               Weekly insights every Thursday. No hype, no fluff. Just what works in production.
             </p>

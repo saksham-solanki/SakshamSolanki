@@ -62,9 +62,9 @@ export default function HomePage() {
             Not another hype group. A workspace for people who ship.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Community Card */}
-            <div className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors">
+            <div className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Users size={20} className="text-accent" />
               </div>
@@ -93,7 +93,7 @@ export default function HomePage() {
             </div>
 
             {/* Newsletter Card */}
-            <div className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors">
+            <div className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Mail size={20} className="text-accent" />
               </div>
@@ -127,14 +127,14 @@ export default function HomePage() {
         <Container>
           <SectionLabel>Services</SectionLabel>
           <h2 className="text-h1 text-text-primary mt-4 mb-4">
-            Full-stack AI and software — one team
+            Full-stack AI and software. One team.
           </h2>
           <p className="text-text-secondary max-w-2xl mb-10">
             AI agents, custom software, MVP launches, and marketing systems.
             Everything you need to build and grow, without juggling vendors.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="/services#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <a href="/services#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Bot size={20} className="text-accent" />
               </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
               <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
             </a>
 
-            <a href="/services#ai-marketing" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+            <a href="/services#ai-marketing" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Target size={20} className="text-accent" />
               </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
               <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
             </a>
 
-            <a href="/services#software-development" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+            <a href="/services#software-development" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Code size={20} className="text-accent" />
               </div>
@@ -161,7 +161,7 @@ export default function HomePage() {
               <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
             </a>
 
-            <a href="/services#startup-services" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+            <a href="/services#startup-services" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Rocket size={20} className="text-accent" />
               </div>
@@ -170,7 +170,7 @@ export default function HomePage() {
               <span className="text-accent text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">Explore <ArrowRight size={14} /></span>
             </a>
 
-            <a href="/services#marketing-solutions" className="bg-bg-secondary border border-border rounded-card p-8 hover:border-accent/30 transition-colors group">
+            <a href="/services#marketing-solutions" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
                 <Megaphone size={20} className="text-accent" />
               </div>
@@ -203,7 +203,7 @@ export default function HomePage() {
                 View all <ArrowRight size={16} />
               </Link>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {caseStudies.map(cs => (
                 <CaseStudyCard key={cs.meta.slug} post={cs.meta} />
               ))}
@@ -227,10 +227,10 @@ export default function HomePage() {
           </h2>
           <p className="text-text-secondary max-w-2xl mb-10">
             Get a clear roadmap before you spend a dollar on AI.
-            Strategy, architecture, and hands-on implementation — from someone who&apos;s deployed 50+ systems.
+            Strategy, architecture, and hands-on implementation from someone who&apos;s deployed 50+ systems.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="/consulting#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="/consulting#ai-solutions" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-6 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <Bot size={20} className="text-accent" />
               </div>
@@ -238,7 +238,7 @@ export default function HomePage() {
               <p className="text-text-secondary text-sm">Audit your workflows, identify high-ROI automation opportunities, and build an implementation plan.</p>
             </a>
 
-            <a href="/consulting#moonship" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+            <a href="/consulting#moonship" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-6 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <Rocket size={20} className="text-accent" />
               </div>
@@ -246,7 +246,7 @@ export default function HomePage() {
               <p className="text-text-secondary text-sm">Go from idea to deployed product in 60 days. Validated, built, and launched.</p>
             </a>
 
-            <a href="/consulting#cto" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+            <a href="/consulting#cto" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-6 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <User size={20} className="text-accent" />
               </div>
@@ -254,7 +254,7 @@ export default function HomePage() {
               <p className="text-text-secondary text-sm">Fractional technical leadership for startups that need senior engineering direction without a full-time hire.</p>
             </a>
 
-            <a href="/consulting#enterprise" className="bg-bg-secondary border border-border rounded-card p-6 hover:border-accent/30 transition-colors group">
+            <a href="/consulting#enterprise" className="bg-bg-secondary border border-border rounded-card p-4 sm:p-6 hover:border-accent/30 transition-colors group">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <Code size={20} className="text-accent" />
               </div>
@@ -286,7 +286,7 @@ export default function HomePage() {
                 View all <ArrowRight size={16} />
               </Link>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {blogPosts.map(post => (
                 <BlogCard key={post.meta.slug} post={post.meta} />
               ))}
@@ -314,7 +314,7 @@ export default function HomePage() {
                 AI automation systems architect. I help B2B companies with 11–200 employees implement production-grade AI systems that actually generate ROI.
               </p>
               <p className="text-text-secondary mb-6">
-                50+ AI systems deployed. $2M+ in client ROI generated. I don&apos;t sell demos or slide decks — I build infrastructure that runs in production and compounds over time.
+                50+ AI systems deployed. $2M+ in client ROI generated. I don&apos;t sell demos or slide decks. I build infrastructure that runs in production and compounds over time.
               </p>
               <div className="flex gap-4">
                 <Button href="/about">

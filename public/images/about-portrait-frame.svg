@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#0A0A0B"/>
+
+  <!-- Background dot grid -->
+  <g fill="#00E5A0" opacity="0.05">
+    <circle cx="40" cy="40" r="1" /><circle cx="80" cy="40" r="1" /><circle cx="120" cy="40" r="1" /><circle cx="160" cy="40" r="1" /><circle cx="200" cy="40" r="1" /><circle cx="240" cy="40" r="1" /><circle cx="280" cy="40" r="1" /><circle cx="320" cy="40" r="1" /><circle cx="360" cy="40" r="1" />
+    <circle cx="40" cy="80" r="1" /><circle cx="80" cy="80" r="1" /><circle cx="120" cy="80" r="1" /><circle cx="280" cy="80" r="1" /><circle cx="320" cy="80" r="1" /><circle cx="360" cy="80" r="1" />
+    <circle cx="40" cy="120" r="1" /><circle cx="80" cy="120" r="1" /><circle cx="320" cy="120" r="1" /><circle cx="360" cy="120" r="1" />
+    <circle cx="40" cy="160" r="1" /><circle cx="360" cy="160" r="1" />
+    <circle cx="40" cy="200" r="1" /><circle cx="360" cy="200" r="1" />
+    <circle cx="40" cy="240" r="1" /><circle cx="360" cy="240" r="1" />
+    <circle cx="40" cy="280" r="1" /><circle cx="80" cy="280" r="1" /><circle cx="320" cy="280" r="1" /><circle cx="360" cy="280" r="1" />
+    <circle cx="40" cy="320" r="1" /><circle cx="80" cy="320" r="1" /><circle cx="120" cy="320" r="1" /><circle cx="280" cy="320" r="1" /><circle cx="320" cy="320" r="1" /><circle cx="360" cy="320" r="1" />
+    <circle cx="40" cy="360" r="1" /><circle cx="80" cy="360" r="1" /><circle cx="120" cy="360" r="1" /><circle cx="160" cy="360" r="1" /><circle cx="200" cy="360" r="1" /><circle cx="240" cy="360" r="1" /><circle cx="280" cy="360" r="1" /><circle cx="320" cy="360" r="1" /><circle cx="360" cy="360" r="1" />
+  </g>
+
+  <!-- Outer decorative frame - full rectangle -->
+  <rect x="30" y="30" width="340" height="340" rx="4" stroke="#00E5A0" stroke-width="1" fill="none" opacity="0.1"/>
+
+  <!-- Main photo frame area -->
+  <rect x="60" y="60" width="280" height="280" rx="2" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.2"/>
+
+  <!-- Inner frame -->
+  <rect x="70" y="70" width="260" height="260" rx="2" stroke="#71717A" stroke-width="0.5" fill="none" opacity="0.15"/>
+
+  <!-- Photo placeholder area (where actual photo would sit) -->
+  <rect x="80" y="80" width="240" height="240" rx="2" fill="#0A0A0B" stroke="#71717A" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Placeholder silhouette hint -->
+  <circle cx="200" cy="175" r="40" stroke="#71717A" stroke-width="1" fill="none" opacity="0.15"/>
+  <path d="M 145,280 Q 145,230 200,220 Q 255,230 255,280" stroke="#71717A" stroke-width="1" fill="none" opacity="0.15"/>
+
+  <!-- Corner accent brackets (bright) -->
+  <g stroke="#00E5A0" stroke-width="2" opacity="0.8">
+    <!-- Top-left -->
+    <path d="M 55,55 L 55,85" fill="none"/>
+    <path d="M 55,55 L 85,55" fill="none"/>
+    <!-- Top-right -->
+    <path d="M 345,55 L 345,85" fill="none"/>
+    <path d="M 345,55 L 315,55" fill="none"/>
+    <!-- Bottom-left -->
+    <path d="M 55,345 L 55,315" fill="none"/>
+    <path d="M 55,345 L 85,345" fill="none"/>
+    <!-- Bottom-right -->
+    <path d="M 345,345 L 345,315" fill="none"/>
+    <path d="M 345,345 L 315,345" fill="none"/>
+  </g>
+
+  <!-- Tech pattern accents - small geometric shapes in corners -->
+  <g stroke="#00E5A0" stroke-width="1" fill="none" opacity="0.15">
+    <!-- Top-left circuit lines -->
+    <line x1="35" y1="50" x2="50" y2="50"/>
+    <line x1="50" y1="35" x2="50" y2="50"/>
+    <circle cx="50" cy="50" r="2"/>
+    <!-- Top-right -->
+    <line x1="365" y1="50" x2="350" y2="50"/>
+    <line x1="350" y1="35" x2="350" y2="50"/>
+    <circle cx="350" cy="50" r="2"/>
+    <!-- Bottom-left -->
+    <line x1="35" y1="350" x2="50" y2="350"/>
+    <line x1="50" y1="365" x2="50" y2="350"/>
+    <circle cx="50" cy="350" r="2"/>
+    <!-- Bottom-right -->
+    <line x1="365" y1="350" x2="350" y2="350"/>
+    <line x1="350" y1="365" x2="350" y2="350"/>
+    <circle cx="350" cy="350" r="2"/>
+  </g>
+
+  <!-- Side accent lines -->
+  <g stroke="#00E5A0" stroke-width="1" opacity="0.1">
+    <line x1="25" y1="150" x2="25" y2="250"/>
+    <line x1="375" y1="150" x2="375" y2="250"/>
+    <line x1="150" y1="25" x2="250" y2="25"/>
+    <line x1="150" y1="375" x2="250" y2="375"/>
+  </g>
+
+  <!-- Small decorative dots on side lines -->
+  <g fill="#00E5A0" opacity="0.2">
+    <circle cx="25" cy="150" r="2"/>
+    <circle cx="25" cy="250" r="2"/>
+    <circle cx="375" cy="150" r="2"/>
+    <circle cx="375" cy="250" r="2"/>
+    <circle cx="150" cy="25" r="2"/>
+    <circle cx="250" cy="25" r="2"/>
+    <circle cx="150" cy="375" r="2"/>
+    <circle cx="250" cy="375" r="2"/>
+  </g>
+</svg>

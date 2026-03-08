@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" fill="transparent"/>
+
+  <!-- Megaphone body (abstract/geometric) -->
+  <g stroke="#00E5A0" stroke-width="1.5" fill="none">
+    <!-- Main cone shape -->
+    <path d="M 60,85 L 120,65 L 120,135 L 60,115 Z" opacity="0.5"/>
+    <!-- Back of megaphone -->
+    <rect x="48" y="85" width="14" height="30" rx="3" opacity="0.5"/>
+    <!-- Front opening -->
+    <path d="M 120,65 Q 135,60 135,100 Q 135,140 120,135" opacity="0.4"/>
+  </g>
+
+  <!-- Handle -->
+  <g stroke="#00E5A0" stroke-width="1" opacity="0.3">
+    <path d="M 55,115 L 55,135 Q 55,140 60,140 L 70,140 Q 75,140 75,135 L 75,115" fill="none"/>
+  </g>
+
+  <!-- Signal waves emanating from megaphone -->
+  <g stroke="#00E5A0" stroke-width="1.5" fill="none">
+    <!-- Wave 1 (closest) -->
+    <path d="M 140,80 Q 150,100 140,120" opacity="0.5"/>
+    <!-- Wave 2 -->
+    <path d="M 150,70 Q 165,100 150,130" opacity="0.35"/>
+    <!-- Wave 3 -->
+    <path d="M 160,60 Q 180,100 160,140" opacity="0.2"/>
+  </g>
+
+  <!-- Signal particles/dots -->
+  <g fill="#00E5A0">
+    <circle cx="155" cy="75" r="2" opacity="0.3"/>
+    <circle cx="165" cy="90" r="1.5" opacity="0.2"/>
+    <circle cx="170" cy="105" r="2" opacity="0.25"/>
+    <circle cx="165" cy="120" r="1.5" opacity="0.2"/>
+    <circle cx="155" cy="130" r="2" opacity="0.15"/>
+    <circle cx="175" cy="75" r="1" opacity="0.1"/>
+    <circle cx="178" cy="125" r="1" opacity="0.1"/>
+  </g>
+
+  <!-- Abstract target/reach indicators -->
+  <g stroke="#00E5A0" stroke-width="1" fill="none" opacity="0.15">
+    <circle cx="170" cy="60" r="5"/>
+    <circle cx="170" cy="60" r="2"/>
+    <circle cx="180" cy="140" r="4"/>
+    <circle cx="180" cy="140" r="1.5"/>
+  </g>
+
+  <!-- Growth arrow (subtle) -->
+  <g stroke="#00E5A0" stroke-width="1" opacity="0.2">
+    <path d="M 45,70 L 35,55" fill="none"/>
+    <path d="M 35,55 L 35,62" fill="none"/>
+    <path d="M 35,55 L 42,55" fill="none"/>
+  </g>
+</svg>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Users, Mail, Zap, BookOpen, MessageSquare, Calendar } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { Section } from '@/components/ui/Section'
@@ -32,7 +33,7 @@ const faqs = [
 ]
 
 export const metadata: Metadata = generateSEO({
-  title: 'AI Builders Club — Community & Newsletter for AI Operators',
+  title: 'AI Builders Club: Community & Newsletter for AI Operators',
   description: 'Free Skool community + weekly newsletter with actionable AI automation insights for B2B operators implementing AI systems. No hype, just systems that work.',
   path: '/ai-builders-club',
 })
@@ -48,21 +49,37 @@ export default function AIBuildersClubPage() {
       />
 
       {/* Hero */}
-      <section className="py-16 lg:py-28">
-        <Container className="text-center max-w-3xl">
-          <SectionLabel>Community + Newsletter</SectionLabel>
-          <h1 className="text-hero text-text-primary mt-6 mb-6">
-            AI Builders Club
-          </h1>
-          <p className="text-xl text-text-secondary leading-relaxed mb-10">
-            The community and newsletter for B2B operators implementing AI systems.
-            For people who build, not theorize.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button href={siteConfig.links.skool} size="lg" external>
-              Join Community on Skool
-            </Button>
-            <BeehiivForm buttonText="Subscribe to Newsletter" className="w-full sm:w-auto" />
+      <section className="py-12 sm:py-16 lg:py-28">
+        <Container className="max-w-4xl">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-12">
+            {/* Left: text content */}
+            <div className="flex-1 text-center md:text-left">
+              <SectionLabel>Community + Newsletter</SectionLabel>
+              <h1 className="text-3xl sm:text-4xl md:text-hero text-text-primary mt-6 mb-6">
+                AI Builders Club
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl text-text-secondary leading-relaxed mb-8 sm:mb-10">
+                The community and newsletter for B2B operators implementing AI systems.
+                For people who build, not theorize.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
+                <Button href={siteConfig.links.skool} size="lg" external className="w-full sm:w-auto">
+                  Join Community on Skool
+                </Button>
+                <BeehiivForm buttonText="Subscribe to Newsletter" className="w-full sm:w-auto" />
+              </div>
+            </div>
+            {/* Right: SVG visual */}
+            <div className="hidden md:flex items-center justify-center flex-1">
+              <Image
+                src="/images/ai-builders-club-visual.svg"
+                alt="AI Builders Club community visualization"
+                width={450}
+                height={400}
+                className="w-full max-w-[400px] h-auto opacity-80"
+                priority
+              />
+            </div>
           </div>
         </Container>
       </section>
@@ -72,24 +89,24 @@ export default function AIBuildersClubPage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Community */}
-            <div className="bg-bg-secondary border border-border rounded-card p-8 lg:p-10">
+            <div className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 lg:p-10">
               <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
                 <Users size={24} className="text-accent" />
               </div>
               <h2 className="text-h2 text-text-primary mb-4">The Community</h2>
               <p className="text-text-secondary mb-8">
                 A private group of B2B operators who are actively building and deploying
-                AI systems. Not a place for hype or speculation — a workspace for people
+                AI systems. Not a place for hype or speculation. A workspace for people
                 who ship.
               </p>
 
               <h3 className="text-text-primary font-semibold mb-4">What you get:</h3>
               <ul className="space-y-4 mb-8">
                 {[
-                  { icon: MessageSquare, text: 'Architecture review threads — share your system design, get feedback from operators who have shipped similar systems' },
-                  { icon: Calendar, text: 'Weekly live build sessions — watch real AI systems being built in real-time' },
-                  { icon: BookOpen, text: 'Tool and vendor breakdowns — honest comparisons from people who actually use them' },
-                  { icon: Zap, text: 'Implementation templates — proven architectures you can adapt to your business' },
+                  { icon: MessageSquare, text: 'Architecture review threads: share your system design, get feedback from operators who have shipped similar systems' },
+                  { icon: Calendar, text: 'Weekly live build sessions: watch real AI systems being built in real-time' },
+                  { icon: BookOpen, text: 'Tool and vendor breakdowns: honest comparisons from people who actually use them' },
+                  { icon: Zap, text: 'Implementation templates: proven architectures you can adapt to your business' },
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <item.icon size={18} className="text-accent shrink-0 mt-0.5" />
@@ -104,7 +121,7 @@ export default function AIBuildersClubPage() {
             </div>
 
             {/* Newsletter */}
-            <div className="bg-bg-secondary border border-border rounded-card p-8 lg:p-10">
+            <div className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8 lg:p-10">
               <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
                 <Mail size={24} className="text-accent" />
               </div>
@@ -130,7 +147,7 @@ export default function AIBuildersClubPage() {
                 ))}
               </ul>
 
-              <BeehiivForm direction="col" buttonText="Subscribe Free — Every Thursday" buttonClassName="w-full" />
+              <BeehiivForm direction="col" buttonText="Subscribe Free, Every Thursday" buttonClassName="w-full" />
               <p className="text-text-tertiary text-xs text-center mt-3">
                 No spam. Unsubscribe anytime.
               </p>
@@ -146,7 +163,7 @@ export default function AIBuildersClubPage() {
           <h2 className="text-h2 text-text-primary mt-4 mb-12">
             Built for people who ship
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 metric: '50+',
@@ -161,11 +178,11 @@ export default function AIBuildersClubPage() {
               {
                 metric: 'Free',
                 label: 'Always',
-                detail: 'Community and newsletter — no strings attached',
+                detail: 'Community and newsletter. No strings attached',
               },
             ].map((stat, i) => (
-              <div key={i} className="bg-bg-secondary border border-border rounded-card p-8">
-                <div className="text-4xl font-bold text-accent mb-2">{stat.metric}</div>
+              <div key={i} className="bg-bg-secondary border border-border rounded-card p-4 sm:p-8">
+                <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">{stat.metric}</div>
                 <div className="text-text-primary font-semibold mb-2">{stat.label}</div>
                 <div className="text-text-tertiary text-sm">{stat.detail}</div>
               </div>

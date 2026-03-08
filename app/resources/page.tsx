@@ -6,7 +6,7 @@ import { generateSEO } from '@/lib/seo'
 
 export const metadata: Metadata = generateSEO({
   title: 'Resources',
-  description: 'Free AI automation resources — templates, guides, and tools for B2B operators implementing AI systems.',
+  description: 'Free AI automation resources: templates, guides, and tools for B2B operators implementing AI systems.',
   path: '/resources',
 })
 

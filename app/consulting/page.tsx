@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   Bot,
@@ -29,7 +30,7 @@ import { generateSEO } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
-  title: 'AI Consulting — AI Systems That Ship in Weeks',
+  title: 'AI Consulting: AI Systems That Ship in Weeks',
   description:
     'AI automation consulting for B2B companies. 50+ AI systems deployed, 500+ projects shipped, $2M+ in client ROI. From voice agents to full MVPs in 60 days. Book a strategy call.',
   path: '/consulting',
@@ -41,7 +42,7 @@ const services = [
     icon: Bot,
     title: 'AI agents and automation systems that work while you sleep',
     description:
-      'From voice agents handling 200+ calls/day to RAG chatbots deflecting 68% of support tickets — I design and deploy AI systems that operate autonomously in production. Not prototypes. Not demos. Systems your team relies on daily.',
+      'From voice agents handling 200+ calls/day to RAG chatbots deflecting 68% of support tickets, I design and deploy AI systems that operate autonomously in production. Not prototypes. Not demos. Systems your team relies on daily.',
     items: [
       {
         icon: Mic,
@@ -53,7 +54,7 @@ const services = [
         icon: MessageSquare,
         name: 'RAG-Based Chatbots',
         detail:
-          "Smart chatbots that answer questions using YOUR company's data — docs, help articles, wikis, product manuals. Zero hallucination architecture. Data stays on your infrastructure.",
+          "Smart chatbots that answer questions using YOUR company's data: docs, help articles, wikis, product manuals. Zero hallucination architecture. Data stays on your infrastructure.",
       },
       {
         icon: Workflow,
@@ -72,26 +73,26 @@ const services = [
       'B2B SaaS companies, real estate agencies, customer support teams, e-commerce brands, call centers, appointment-based businesses.',
     cta: { text: 'Book an AI Audit', href: siteConfig.links.calendly },
     ctaSubtext:
-      "Tell me what you want to automate. I'll tell you if AI is the right solution — and exactly how to build it.",
+      "Tell me what you want to automate. I'll tell you if AI is the right solution, and exactly how to build it.",
   },
   {
     label: 'PRODUCT LAUNCH',
     icon: Rocket,
     title: 'From idea to production in 60 days. Not 6 months.',
     description:
-      'You have the idea. I have 22+ battle-tested product architectures ready to deploy. Instead of building from zero, we assemble your MVP from proven components — custom-branded, integrated with your systems, and ready for real users.',
+      'You have the idea. I have 22+ battle-tested product architectures ready to deploy. Instead of building from zero, we assemble your MVP from proven components, custom-branded, integrated with your systems, and ready for real users.',
     steps: [
       {
         week: 'Week 1',
         name: 'Product Vision',
         detail:
-          "We define your MVP scope together. What's essential for launch. What can wait. User flows, feature priority, technical architecture — all decided in 5 days.",
+          "We define your MVP scope together. What's essential for launch. What can wait. User flows, feature priority, technical architecture. All decided in 5 days.",
       },
       {
         week: 'Week 2-3',
         name: 'Design',
         detail:
-          'UI/UX design focused on your users. Not generic templates — custom interfaces built for your specific workflow and audience. Mobile-first, production-grade.',
+          'UI/UX design focused on your users. Not generic templates. Custom interfaces built for your specific workflow and audience. Mobile-first, production-grade.',
       },
       {
         week: 'Week 3-7',
@@ -103,7 +104,7 @@ const services = [
         week: 'Week 7-8',
         name: 'Launch',
         detail:
-          "Deployment, go-to-market strategy, and your first real users. We don't just hand you code — we help you get to revenue.",
+          "Deployment, go-to-market strategy, and your first real users. We don't just hand you code. We help you get to revenue.",
       },
     ],
     deliverables: [
@@ -181,7 +182,7 @@ const services = [
     icon: Code2,
     title: 'Custom software built for how your business actually works',
     description:
-      'Off-the-shelf tools force you to change your processes to fit the software. I build software that fits your processes — integrated with your existing systems, designed for your team, and built to scale.',
+      'Off-the-shelf tools force you to change your processes to fit the software. I build software that fits your processes, integrated with your existing systems, designed for your team, and built to scale.',
     items: [
       {
         icon: Code2,
@@ -256,7 +257,7 @@ const faqItems = [
   {
     question: 'Do you work with early-stage startups?',
     answer:
-      "Yes — that's what Moonship is for. If you have an idea and need a production MVP fast, apply for Moonship. I take 3 projects per month.",
+      "Yes, that's what Moonship is for. If you have an idea and need a production MVP fast, apply for Moonship. I take 3 projects per month.",
   },
   {
     question: 'What if I just need advice, not a full build?',
@@ -266,7 +267,7 @@ const faqItems = [
   {
     question: 'What industries do you work with?',
     answer:
-      'SaaS, e-commerce, real estate, hospitality, logistics, healthcare, fintech, legal tech, education, retail, and manufacturing. If your business runs on processes that involve data, communication, or decision-making — AI can probably improve it.',
+      'SaaS, e-commerce, real estate, hospitality, logistics, healthcare, fintech, legal tech, education, retail, and manufacturing. If your business runs on processes that involve data, communication, or decision-making, AI can probably improve it.',
   },
   {
     question: "What's your tech stack?",
@@ -280,7 +281,7 @@ const metricCards = [
     number: '50+',
     label: 'AI Systems Deployed',
     context:
-      'Voice agents, RAG chatbots, workflow automations — all running in production.',
+      'Voice agents, RAG chatbots, workflow automations. All running in production.',
   },
   {
     number: '500+',
@@ -295,7 +296,7 @@ const metricCards = [
   {
     number: '60 Days',
     label: 'Average Launch Time',
-    context: 'From kickoff to production. Not staging — real users.',
+    context: 'From kickoff to production. Not staging. Real users.',
   },
 ]
 
@@ -324,21 +325,21 @@ export default function ConsultingPage() {
       <section className="py-16 lg:py-28">
         <Container className="max-w-4xl">
           <SectionLabel>Consulting</SectionLabel>
-          <h1 className="text-hero text-text-primary mt-6 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-hero text-text-primary mt-6 mb-6">
             AI systems that ship.{' '}
-            <span className="text-accent">Not someday — in weeks.</span>
+            <span className="text-accent">Not someday. In weeks.</span>
           </h1>
-          <p className="text-xl text-text-secondary leading-relaxed mb-8 max-w-3xl">
+          <p className="text-base sm:text-lg md:text-xl text-text-secondary leading-relaxed mb-8 max-w-3xl">
             I help B2B companies design, build, and deploy AI automation systems
             that reduce costs, accelerate operations, and compound over time.
             50+ systems deployed. 500+ projects behind me. 20+ years of
             production-grade engineering.
           </p>
-          <div className="flex flex-wrap gap-4 mb-10">
-            <Button href={siteConfig.links.calendly} size="lg" external>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-10">
+            <Button href={siteConfig.links.calendly} size="lg" external className="w-full sm:w-auto">
               Book a Strategy Call
             </Button>
-            <Button href="/case-studies" variant="outlined" size="lg">
+            <Button href="/case-studies" variant="outlined" size="lg" className="w-full sm:w-auto">
               View Case Studies
             </Button>
           </div>
@@ -427,7 +428,7 @@ export default function ConsultingPage() {
           </p>
 
           {/* Timeline steps */}
-          <div className="grid md:grid-cols-4 gap-6 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
             {services[1].steps!.map((step, i) => (
               <div
                 key={i}
@@ -601,9 +602,18 @@ export default function ConsultingPage() {
       <Section className="bg-bg-secondary/50">
         <Container className="max-w-3xl">
           <SectionLabel>Process</SectionLabel>
-          <h2 className="text-h1 text-text-primary mt-4 mb-12">
+          <h2 className="text-h1 text-text-primary mt-4 mb-8">
             The process is simple. The execution is rigorous.
           </h2>
+          <div className="hidden md:flex justify-center mb-10">
+            <Image
+              src="/images/consulting-process.svg"
+              alt="Consulting process: Diagnose, Architect, Deploy"
+              width={800}
+              height={200}
+              className="w-full max-w-[700px] h-auto opacity-80"
+            />
+          </div>
           <div className="space-y-8">
             {[
               {
@@ -622,7 +632,7 @@ export default function ConsultingPage() {
                 step: '03',
                 title: 'Deploy',
                 description:
-                  'My team builds and deploys the system into production. Not a staging environment — actual production serving real users. We train your team, monitor performance, and optimize for 30 days post-launch.',
+                  'My team builds and deploys the system into production. Not a staging environment. Actual production serving real users. We train your team, monitor performance, and optimize for 30 days post-launch.',
               },
             ].map((step, i) => (
               <div key={i} className="flex gap-6">
@@ -641,7 +651,7 @@ export default function ConsultingPage() {
         </Container>
       </Section>
 
-      {/* Social Proof — Metrics */}
+      {/* Social Proof: Metrics */}
       <Section>
         <Container>
           <SectionLabel>Results</SectionLabel>
@@ -652,9 +662,9 @@ export default function ConsultingPage() {
             {metricCards.map((card, i) => (
               <div
                 key={i}
-                className="bg-bg-secondary border border-border rounded-card p-6"
+                className="bg-bg-secondary border border-border rounded-card p-4 sm:p-6"
               >
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-2">
                   {card.number}
                 </div>
                 <div className="text-text-primary text-sm font-medium mb-1">
@@ -669,7 +679,7 @@ export default function ConsultingPage() {
           <LogoMarquee title="Trusted by teams at" />
 
           {/* Results Snapshot Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {resultCards.map((card, i) => (
               <Link
                 key={i}
@@ -725,7 +735,7 @@ export default function ConsultingPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'ProfessionalService',
-            name: 'Saksham Solanki — AI Consulting',
+            name: 'Saksham Solanki | AI Consulting',
             url: 'https://sakshamsolanki.com/consulting',
             description:
               'AI automation consulting for B2B companies. Design, build, and deploy AI systems that reduce costs and accelerate operations.',
@@ -751,7 +761,7 @@ export default function ConsultingPage() {
                   '@type': 'Offer',
                   itemOffered: {
                     '@type': 'Service',
-                    name: 'Moonship MVP — Launch in 60 Days',
+                    name: 'Moonship MVP: Launch in 60 Days',
                     description:
                       'From idea to production MVP in 60 days using battle-tested product architectures.',
                   },

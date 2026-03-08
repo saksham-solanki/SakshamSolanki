@@ -40,7 +40,7 @@ import { generateSEO } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
 export const metadata: Metadata = generateSEO({
-  title: 'Services — AI Solutions, Software Development & Marketing | Saksham Solanki',
+  title: 'Services: AI Solutions, Software Development & Marketing | Saksham Solanki',
   description: 'Full-stack AI solutions, custom software development, MVP launches, and AI-powered marketing. From strategy to deployed systems. Book a free consultation.',
   path: '/services',
 })
@@ -70,7 +70,7 @@ const serviceCategories = [
       {
         icon: Bot,
         title: 'Autonomous Workflows',
-        description: 'End-to-end task automation — meeting scheduling, follow-ups, data processing, reporting. Set it up once, let it run.',
+        description: 'End-to-end task automation: meeting scheduling, follow-ups, data processing, reporting. Set it up once, let it run.',
       },
     ],
   },
@@ -78,7 +78,7 @@ const serviceCategories = [
     id: 'ai-marketing',
     label: 'AI for Marketing',
     headline: 'Marketing that runs on intelligence, not headcount',
-    description: 'AI-powered marketing systems that score leads, generate content, optimize campaigns, and orchestrate events — at a fraction of the manual effort.',
+    description: 'AI-powered marketing systems that score leads, generate content, optimize campaigns, and orchestrate events. At a fraction of the manual effort.',
     services: [
       {
         icon: BarChart3,
@@ -106,7 +106,7 @@ const serviceCategories = [
     id: 'software-development',
     label: 'Custom Software',
     headline: 'Software built for your business, not around it',
-    description: 'Production-grade software development with 20+ years of collective experience. Mobile, web, SaaS, e-commerce — architected for scale from day one.',
+    description: 'Production-grade software development with 20+ years of collective experience. Mobile, web, SaaS, e-commerce. Architected for scale from day one.',
     services: [
       {
         icon: Smartphone,
@@ -161,7 +161,7 @@ const serviceCategories = [
       {
         icon: Lightbulb,
         title: 'Startup AI Toolkit',
-        description: 'Everything a startup needs to ship with AI: product vision, design, production-grade software, and customer acquisition — in one package.',
+        description: 'Everything a startup needs to ship with AI: product vision, design, production-grade software, and customer acquisition. In one package.',
       },
       {
         icon: Target,
@@ -174,7 +174,7 @@ const serviceCategories = [
     id: 'marketing-solutions',
     label: 'Marketing',
     headline: 'Growth systems, not random acts of marketing',
-    description: 'Full-stack marketing execution powered by AI. From content and SEO to paid ads and email campaigns — everything connected, everything measured.',
+    description: 'Full-stack marketing execution powered by AI. From content and SEO to paid ads and email campaigns. Everything connected, everything measured.',
     services: [
       {
         icon: Sparkles,
@@ -333,7 +333,7 @@ export default function ServicesPage() {
               {
                 step: '02',
                 title: 'Architecture & Scope',
-                description: 'I design the system architecture — what to build, how it integrates, what results to expect. You approve before anything gets built.',
+                description: 'I design the system architecture: what to build, how it integrates, what results to expect. You approve before anything gets built.',
               },
               {
                 step: '03',

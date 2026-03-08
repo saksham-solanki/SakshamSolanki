@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" fill="none">
+  <rect width="800" height="200" fill="#0A0A0B"/>
+
+  <!-- Connecting lines between steps -->
+  <g stroke="#00E5A0" stroke-width="1.5" opacity="0.3">
+    <line x1="230" y1="100" x2="330" y2="100"/>
+    <line x1="470" y1="100" x2="570" y2="100"/>
+  </g>
+
+  <!-- Directional arrows on connecting lines -->
+  <g fill="#00E5A0" opacity="0.3">
+    <polygon points="325,95 335,100 325,105"/>
+    <polygon points="565,95 575,100 565,105"/>
+  </g>
+
+  <!-- Dashed data flow lines -->
+  <g stroke="#00E5A0" stroke-width="1" opacity="0.1" stroke-dasharray="4 4">
+    <line x1="230" y1="85" x2="330" y2="85"/>
+    <line x1="230" y1="115" x2="330" y2="115"/>
+    <line x1="470" y1="85" x2="570" y2="85"/>
+    <line x1="470" y1="115" x2="570" y2="115"/>
+  </g>
+
+  <!-- Step 1: Diagnose -->
+  <g>
+    <!-- Outer ring -->
+    <circle cx="160" cy="100" r="50" stroke="#00E5A0" stroke-width="2" fill="none" opacity="0.2"/>
+    <!-- Inner ring -->
+    <circle cx="160" cy="100" r="38" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <!-- Center dot -->
+    <circle cx="160" cy="100" r="3" fill="#00E5A0" opacity="0.8"/>
+
+    <!-- Magnifying glass icon -->
+    <circle cx="155" cy="95" r="14" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <line x1="165" y1="105" x2="174" y2="114" stroke="#00E5A0" stroke-width="1.5" opacity="0.8"/>
+    <!-- Crosshair lines inside magnifier -->
+    <line x1="155" y1="87" x2="155" y2="103" stroke="#00E5A0" stroke-width="1" opacity="0.3"/>
+    <line x1="147" y1="95" x2="163" y2="95" stroke="#00E5A0" stroke-width="1" opacity="0.3"/>
+
+    <!-- Label -->
+    <text x="160" y="170" text-anchor="middle" fill="#FAFAFA" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" letter-spacing="0.05em">DIAGNOSE</text>
+    <!-- Step number -->
+    <text x="160" y="185" text-anchor="middle" fill="#71717A" font-family="system-ui, -apple-system, sans-serif" font-size="10">01</text>
+  </g>
+
+  <!-- Step 2: Architect -->
+  <g>
+    <circle cx="400" cy="100" r="50" stroke="#00E5A0" stroke-width="2" fill="none" opacity="0.2"/>
+    <circle cx="400" cy="100" r="38" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <circle cx="400" cy="100" r="3" fill="#00E5A0" opacity="0.8"/>
+
+    <!-- Blueprint/architecture icon - connected nodes -->
+    <rect x="387" y="85" width="10" height="10" rx="1" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <rect x="403" y="85" width="10" height="10" rx="1" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <rect x="395" y="101" width="10" height="10" rx="1" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <line x1="397" y1="92" x2="403" y2="92" stroke="#00E5A0" stroke-width="1" opacity="0.5"/>
+    <line x1="394" y1="95" x2="398" y2="101" stroke="#00E5A0" stroke-width="1" opacity="0.5"/>
+    <line x1="407" y1="95" x2="403" y2="101" stroke="#00E5A0" stroke-width="1" opacity="0.5"/>
+
+    <text x="400" y="170" text-anchor="middle" fill="#FAFAFA" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" letter-spacing="0.05em">ARCHITECT</text>
+    <text x="400" y="185" text-anchor="middle" fill="#71717A" font-family="system-ui, -apple-system, sans-serif" font-size="10">02</text>
+  </g>
+
+  <!-- Step 3: Deploy -->
+  <g>
+    <circle cx="640" cy="100" r="50" stroke="#00E5A0" stroke-width="2" fill="none" opacity="0.2"/>
+    <circle cx="640" cy="100" r="38" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <circle cx="640" cy="100" r="3" fill="#00E5A0"/>
+
+    <!-- Deploy/launch icon - upward arrow with base -->
+    <path d="M 640,86 L 632,98 L 636,98 L 636,112 L 644,112 L 644,98 L 648,98 Z" stroke="#00E5A0" stroke-width="1.5" fill="none" opacity="0.8"/>
+    <!-- Base platform line -->
+    <line x1="630" y1="114" x2="650" y2="114" stroke="#00E5A0" stroke-width="1.5" opacity="0.5"/>
+
+    <text x="640" y="170" text-anchor="middle" fill="#FAFAFA" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" letter-spacing="0.05em">DEPLOY</text>
+    <text x="640" y="185" text-anchor="middle" fill="#71717A" font-family="system-ui, -apple-system, sans-serif" font-size="10">03</text>
+  </g>
+
+  <!-- Subtle corner accents -->
+  <g stroke="#00E5A0" stroke-width="1" opacity="0.1">
+    <path d="M 10,10 L 10,30" fill="none"/>
+    <path d="M 10,10 L 30,10" fill="none"/>
+    <path d="M 790,10 L 790,30" fill="none"/>
+    <path d="M 790,10 L 770,10" fill="none"/>
+    <path d="M 10,190 L 10,170" fill="none"/>
+    <path d="M 10,190 L 30,190" fill="none"/>
+    <path d="M 790,190 L 790,170" fill="none"/>
+    <path d="M 790,190 L 770,190" fill="none"/>
+  </g>
+</svg>

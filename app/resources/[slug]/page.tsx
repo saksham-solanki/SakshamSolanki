@@ -26,7 +26,7 @@ const resources: Record<string, { title: string; description: string; format: st
     title: 'AI ROI Calculator',
     description: 'Calculate the expected ROI of AI automation for your specific business processes.',
     format: 'Spreadsheet',
-    details: 'Input your current process metrics — time spent, error rates, employee costs — and the calculator projects expected improvements based on benchmarks from 50+ real implementations. Includes conservative, moderate, and aggressive scenarios.',
+    details: 'Input your current process metrics: time spent, error rates, employee costs, and the calculator projects expected improvements based on benchmarks from 50+ real implementations. Includes conservative, moderate, and aggressive scenarios.',
   },
   'vendor-comparison': {
     title: 'Vendor Comparison Matrix',
