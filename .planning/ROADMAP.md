@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. ICP-specific messaging documents exist for PE firms, funded startups, and enterprise teams with distinct pain points and language
   4. One-page executive summaries exist for each tier as shareable PDFs with no pricing displayed
   5. Viithiisys team narrative is defined with honest framing ready for discovery calls
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Offer tier scope documents (Audit, Sprint, Transformation) and value-based pricing framework with ROI calculator
+- [ ] 01-02-PLAN.md — ICP-specific messaging (PE firms, startups, enterprise), executive one-pagers, and Viithiisys team narrative
 
 ### Phase 2: Credibility Engine (Website)
 **Goal**: When a prospect visits sakshamsolanki.com after a LinkedIn touchpoint, the site immediately validates Saksham as a premium AI systems partner -- not a dev shop
@@ -94,7 +94,7 @@ Phases execute in numeric order with overlap where possible. Phase 2 starts duri
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Offer Architecture and Positioning | 0/2 | Not started | - |
+| 1. Offer Architecture and Positioning | 0/2 | Planning complete | - |
 | 2. Credibility Engine (Website) | 0/3 | Not started | - |
 | 3. LinkedIn Reactivation and Pipeline | 0/3 | Not started | - |
 | 4. Sales Process and Conversion | 0/3 | Not started | - |
