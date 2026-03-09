@@ -32,8 +32,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 01-01-PLAN.md — Offer tier scope documents (Audit, Sprint, Transformation) and value-based pricing framework with ROI calculator
-- [ ] 01-02-PLAN.md — ICP-specific messaging (PE firms, startups, enterprise), executive one-pagers, and Viithiisys team narrative
+- [x] 01-01-PLAN.md — Offer tier scope documents (Audit, Sprint, Transformation) and value-based pricing framework with ROI calculator
+- [x] 01-02-PLAN.md — ICP-specific messaging (PE firms, startups, enterprise), executive one-pagers, and Viithiisys team narrative
 
 ### Phase 2: Credibility Engine (Website)
 **Goal**: When a prospect visits sakshamsolanki.com after a LinkedIn touchpoint, the site immediately validates Saksham as a premium AI systems partner -- not a dev shop
@@ -45,12 +45,12 @@ Plans:
   3. 3-5 case studies are reframed around dollar ROI and business outcomes (e.g., "$2.4M annual savings" not just "84% time reduction")
   4. Client logo bar with social proof metrics (systems deployed, industries served, hours saved) is visible on key pages
   5. Contact form is replaced by a pre-qualification form that filters tire-kickers before call booking
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — Homepage premium repositioning, social proof metrics bar, and anti-feature cleanup across site
+- [ ] 02-02-PLAN.md — New /solutions page with 3-tier offer ladder, "How We Work" process, navigation update, and redirects
+- [ ] 02-03-PLAN.md — Case study dollar ROI reframing (5 studies) and pre-qualification form on /solutions
 
 ### Phase 3: LinkedIn Reactivation and Pipeline
 **Goal**: Saksham's LinkedIn is generating qualified conversations with decision-makers who have $40K+ budgets -- profile, content, and outbound are all active
