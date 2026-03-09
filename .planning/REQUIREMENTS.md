@@ -9,11 +9,11 @@ Requirements for the 30-day sprint. Each maps to roadmap phases.
 
 ### Offer Architecture
 
-- [ ] **OFFER-01**: 3 tiered offers defined with clear names, scope documents, deliverables, and timelines (Audit, Sprint, Transformation)
-- [ ] **OFFER-02**: Value-based pricing framework with ROI calculator for each tier — price at 10-25% of projected business impact
-- [ ] **OFFER-03**: ICP-specific messaging documents for PE firms, funded startups, and enterprise teams — different pain points, different language
-- [ ] **OFFER-04**: One-page executive summary for each offer tier (shareable PDF, no pricing — pricing revealed on calls only)
-- [ ] **OFFER-05**: Viithiisys team narrative defined — honest framing: "I lead strategy and architecture, execution by my dedicated engineering team"
+- [x] **OFFER-01**: 3 tiered offers defined with clear names, scope documents, deliverables, and timelines (Audit, Sprint, Transformation)
+- [x] **OFFER-02**: Value-based pricing framework with ROI calculator for each tier — price at 10-25% of projected business impact
+- [x] **OFFER-03**: ICP-specific messaging documents for PE firms, funded startups, and enterprise teams — different pain points, different language
+- [x] **OFFER-04**: One-page executive summary for each offer tier (shareable PDF, no pricing — pricing revealed on calls only)
+- [x] **OFFER-05**: Viithiisys team narrative defined — honest framing: "I lead strategy and architecture, execution by my dedicated engineering team"
 
 ### Website — Premium Repositioning
 
@@ -86,11 +86,11 @@ Deferred to after first 2-3 deals close. Tracked but not in current roadmap.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| OFFER-01 | Phase 1 | Pending |
-| OFFER-02 | Phase 1 | Pending |
-| OFFER-03 | Phase 1 | Pending |
-| OFFER-04 | Phase 1 | Pending |
-| OFFER-05 | Phase 1 | Pending |
+| OFFER-01 | Phase 1 | Complete |
+| OFFER-02 | Phase 1 | Complete |
+| OFFER-03 | Phase 1 | Complete |
+| OFFER-04 | Phase 1 | Complete |
+| OFFER-05 | Phase 1 | Complete |
 | WEB-01 | Phase 2 | Pending |
 | WEB-02 | Phase 2 | Pending |
 | WEB-03 | Phase 2 | Pending |
