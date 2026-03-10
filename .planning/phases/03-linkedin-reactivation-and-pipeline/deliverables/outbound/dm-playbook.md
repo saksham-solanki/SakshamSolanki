@@ -176,6 +176,8 @@ Only send if the conversation has been warm (they responded to DM 1 or DM 2). If
 
 ### Funded Startup DM Sequence
 
+**Language note:** Use startup language throughout -- ship fast, burn rate, runway, feature velocity, traction, board meeting, investor metrics. Never use PE language (EBITDA, margin expansion, portfolio) with startups.
+
 **DM 1 (Day 1 after acceptance): Thank + Ask About AI Feature Roadmap**
 
 *Example Sequence A (Fresh Funding trigger):*
@@ -208,7 +210,7 @@ Only send if the conversation has been warm (they responded to DM 1 or DM 2). If
 
 > On the engineering capacity point -- this is the exact pattern we see with Series A-B companies.
 >
-> One client was burning $150K/month with a 6-person engineering team already at capacity. We came in as an embedded AI team, deployed a system that tripled their qualified meetings at $150/month operating cost. Their CTO said it freed up two engineers to focus on core product instead.
+> One client was burning through runway -- $150K/month burn rate with a 6-person engineering team already at capacity. We came in as an embedded AI team, deployed a system that tripled their qualified meetings at $150/month operating cost. Their CTO said it freed up two engineers to focus on core product instead.
 >
 > Is your engineering bandwidth the bottleneck, or is it more about knowing what to build?
 
