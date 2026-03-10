@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Completed 01-02-PLAN.md (Phase 1 complete)
-last_updated: "2026-03-09T18:47:44.704Z"
-last_activity: 2026-03-10 — Plan 01-02 executed (ICP messaging, executive summaries, team narrative)
+status: in-progress
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-10T03:08:12Z"
+last_activity: 2026-03-10 — Plan 02-01 executed (homepage premium positioning, anti-feature cleanup)
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 100
+  total_plans: 3
+  completed_plans: 3
+  percent: 25
 ---
 
 # Project State
@@ -21,33 +21,34 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-09)
 
 **Core value:** Transform proven AI delivery capability into packaged high-ticket offers ($40K-$1M+) and close the first deal within 30 days
-**Current focus:** Phase 1 Complete -- Ready for Phase 2
+**Current focus:** Phase 2 -- Credibility Engine Website
 
 ## Current Position
 
-Phase: 1 of 4 (Offer Architecture and Positioning) -- COMPLETE
-Plan: 2 of 2 in current phase
-Status: Phase 1 Complete
-Last activity: 2026-03-10 — Plan 01-02 executed (ICP messaging, executive summaries, team narrative)
+Phase: 2 of 4 (Credibility Engine Website)
+Plan: 1 of 3 in current phase -- COMPLETE
+Status: In Progress
+Last activity: 2026-03-10 — Plan 02-01 executed (homepage premium positioning, anti-feature cleanup)
 
-Progress: [██████████] 100%
+Progress: [██████░░░░] 25%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 5.5min
-- Total execution time: 11min
+- Total plans completed: 3
+- Average duration: 5min
+- Total execution time: 15min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 - Offer Architecture | 2/2 | 11min | 5.5min |
+| 2 - Credibility Engine Website | 1/3 | 4min | 4min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (5min), 01-02 (6min)
-- Trend: Stable
+- Last 5 plans: 01-01 (5min), 01-02 (6min), 02-01 (4min)
+- Trend: Improving
 
 *Updated after each plan completion*
 
@@ -70,6 +71,10 @@ Recent decisions affecting current work:
 - [01-02]: Enterprise entry point is Audit -- multi-stakeholder approval requires internal business case document
 - [01-02]: Executive summaries use problem-framing dollar amounts but zero offer pricing
 - [01-02]: Team narrative positions distributed team as speed advantage (around-the-clock delivery)
+- [02-01]: Hero headline uses "AI systems that deliver measurable ROI" -- outcome-focused, no banned words
+- [02-01]: Services page replaced with redirect to /solutions (not minimal content)
+- [02-01]: Social proof metrics bar placed between logo marquee and offer ladder for maximum visibility
+- [02-01]: AI Operations Sprint card given accent border to highlight mid-tier offer
 
 ### Pending Todos
 
@@ -83,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-09T18:42:00Z
-Stopped at: Completed 01-02-PLAN.md (Phase 1 complete)
-Resume file: Phase 2 plans (next phase)
+Last session: 2026-03-10T03:08:12Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: 02-02-PLAN.md (next plan in phase 2)
