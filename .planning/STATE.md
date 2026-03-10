@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: in-progress
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-10T03:08:12Z"
-last_activity: 2026-03-10 — Plan 02-01 executed (homepage premium positioning, anti-feature cleanup)
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-10T03:09:37Z"
+last_activity: 2026-03-10 — Plan 02-02 executed (solutions page, navigation, redirects)
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 3
-  completed_plans: 3
-  percent: 25
+  completed_plans: 4
+  percent: 33
 ---
 
 # Project State
@@ -26,29 +26,29 @@ See: .planning/PROJECT.md (updated 2026-03-09)
 ## Current Position
 
 Phase: 2 of 4 (Credibility Engine Website)
-Plan: 1 of 3 in current phase -- COMPLETE
+Plan: 2 of 3 in current phase -- COMPLETE
 Status: In Progress
-Last activity: 2026-03-10 — Plan 02-01 executed (homepage premium positioning, anti-feature cleanup)
+Last activity: 2026-03-10 — Plan 02-02 executed (solutions page, navigation, redirects)
 
-Progress: [██████░░░░] 25%
+Progress: [███████░░░] 33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
+- Total plans completed: 4
 - Average duration: 5min
-- Total execution time: 15min
+- Total execution time: 20min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 - Offer Architecture | 2/2 | 11min | 5.5min |
-| 2 - Credibility Engine Website | 1/3 | 4min | 4min |
+| 2 - Credibility Engine Website | 2/3 | 9min | 4.5min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (5min), 01-02 (6min), 02-01 (4min)
-- Trend: Improving
+- Last 5 plans: 01-01 (5min), 01-02 (6min), 02-01 (4min), 02-02 (5min)
+- Trend: Stable
 
 *Updated after each plan completion*
 
@@ -75,6 +75,10 @@ Recent decisions affecting current work:
 - [02-01]: Services page replaced with redirect to /solutions (not minimal content)
 - [02-01]: Social proof metrics bar placed between logo marquee and offer ladder for maximum visibility
 - [02-01]: AI Operations Sprint card given accent border to highlight mid-tier offer
+- [02-02]: Button variant uses 'filled' not 'default' -- discovered from type check
+- [02-02]: Consulting page replaced with server-side redirect (cleaner than leaving old content)
+- [02-02]: Removed mega menu dropdowns from TubelightNav -- Solutions is a single page
+- [02-02]: Route consolidation: old routes get both next.config redirect AND server-side redirect fallback
 
 ### Pending Todos
 
@@ -88,6 +92,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-10T03:08:12Z
-Stopped at: Completed 02-01-PLAN.md
-Resume file: 02-02-PLAN.md (next plan in phase 2)
+Last session: 2026-03-10T03:09:37Z
+Stopped at: Completed 02-02-PLAN.md
+Resume file: 02-03-PLAN.md (next plan in phase 2)
