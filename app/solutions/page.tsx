@@ -15,6 +15,7 @@ import { Section } from '@/components/ui/Section'
 import { SectionLabel } from '@/components/ui/SectionLabel'
 import { Button } from '@/components/ui/Button'
 import { LogoMarquee } from '@/components/consulting/LogoMarquee'
+import { PreQualificationForm } from '@/components/PreQualificationForm'
 import { generateSEO } from '@/lib/seo'
 import { siteConfig } from '@/lib/constants'
 
@@ -337,21 +338,30 @@ export default function SolutionsPage() {
 
       {/* CTA Section */}
       <Section id="contact">
-        <Container className="text-center max-w-2xl">
-          <h2 className="text-h1 text-text-primary mb-6">
-            Ready to See What AI Can Do for Your Operations?
-          </h2>
-          <p className="text-text-secondary mb-8">
-            Book a strategy call. We&apos;ll identify the highest-impact
-            opportunities in your business and recommend the right engagement
-            tier.
-          </p>
-          <Button href={siteConfig.links.calendly} size="lg" external>
-            Book a Strategy Call
-          </Button>
-          <p className="text-text-tertiary text-sm mt-4">
-            30-minute call. No pitch. Just an honest assessment of where AI can
-            help your business.
+        <Container className="max-w-2xl">
+          <div className="text-center mb-10">
+            <h2 className="text-h1 text-text-primary mb-6">
+              Ready to See What AI Can Do for Your Operations?
+            </h2>
+            <p className="text-text-secondary mb-2">
+              Tell us about your situation. We&apos;ll review your submission
+              and prepare a focused strategy call around your specific
+              challenges.
+            </p>
+          </div>
+
+          <PreQualificationForm />
+
+          <p className="text-text-tertiary text-sm mt-6 text-center">
+            Prefer to skip the form?{' '}
+            <a
+              href={siteConfig.links.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              Book directly on Calendly
+            </a>
           </p>
         </Container>
       </Section>
