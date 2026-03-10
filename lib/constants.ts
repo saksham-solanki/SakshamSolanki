@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Saksham Solanki',
-  title: 'Saksham Solanki | AI Automation Systems Architect',
-  description: 'I build AI systems that work. Production-grade AI automation for B2B companies. Consulting, implementation, and ongoing operations.',
+  title: 'Saksham Solanki | AI Systems Partner',
+  description: 'AI systems partner. We design, build, and deploy AI infrastructure that delivers measurable business results. 50+ production systems. $2M+ in documented ROI.',
   url: 'https://sakshamsolanki.com',
   ogImage: '/og/default.png',
   links: {
@@ -15,17 +15,16 @@ export const siteConfig = {
   },
   author: {
     name: 'Saksham Solanki',
-    role: 'AI Automation Systems Architect',
+    role: 'AI Systems Partner',
     location: '',
   },
 }
 
 export const navLinks = [
-  { href: '/services', label: 'Services' },
+  { href: '/solutions', label: 'Solutions' },
   { href: '/blog', label: 'Blog' },
   { href: '/case-studies', label: 'Case Studies' },
   { href: '/ai-builders-club', label: 'AI Builders Club' },
-  { href: '/consulting', label: 'Consulting' },
   { href: '/about', label: 'About' },
 ]
 

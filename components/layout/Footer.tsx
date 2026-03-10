@@ -14,7 +14,7 @@ export function Footer() {
               Saksham<span className="text-accent">.</span>
             </Link>
             <p className="mt-3 text-text-tertiary text-sm max-w-xs">
-              AI automation systems architect. Building production-grade AI infrastructure for B2B companies.
+              Designing and deploying AI systems that deliver measurable business results.
             </p>
           </div>
 
