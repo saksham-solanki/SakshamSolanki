@@ -257,7 +257,7 @@ export function NavBar({ items, className }: NavBarProps) {
                       {/* Consulting CTA */}
                       <div className="h-px bg-border mt-3 mb-2" />
                       <Link
-                        href="/consulting"
+                        href="/solutions"
                         onClick={() => setOpenDropdown(null)}
                         className="flex items-center justify-between px-3 py-2 rounded-lg hover:bg-bg-hover transition-colors group"
                       >

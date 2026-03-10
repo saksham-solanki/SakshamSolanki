@@ -2,13 +2,7 @@
 
 import { useState, useEffect } from "react"
 import {
-  Home, FileText, Users, Briefcase, User, Phone, Layers,
-  Bot, MessageSquare, Mic, Workflow,
-  BarChart3, PenTool, FlaskConical, CalendarCheck,
-  Smartphone, Cloud, Globe, Palette, ShoppingCart, Building2,
-  Rocket, UserCog, Lightbulb, Target,
-  Sparkles, Megaphone, Mail, Share2, Presentation,
-  Brain, Code2, Monitor, Settings,
+  Home, FileText, Users, Briefcase, User, Layers,
   Menu, X, ArrowRight,
 } from "lucide-react"
 import { NavBar } from "@/components/ui/tubelight-navbar"
@@ -20,115 +14,18 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const navItems = [
   { name: "Home", url: "/", icon: Home },
-  {
-    name: "Services",
-    url: "/services",
-    icon: Layers,
-    megaMenu: [
-      {
-        category: "AI Solutions",
-        url: "/services#ai-solutions",
-        icon: Bot,
-        services: [
-          { name: "Voice Agents", url: "/services#ai-solutions", icon: Mic },
-          { name: "Chat Agents", url: "/services#ai-solutions", icon: MessageSquare },
-          { name: "Agent Architectures", url: "/services#ai-solutions", icon: Workflow },
-          { name: "Autonomous Workflows", url: "/services#ai-solutions", icon: Bot },
-        ],
-      },
-      {
-        category: "AI for Marketing",
-        url: "/services#ai-marketing",
-        icon: BarChart3,
-        services: [
-          { name: "Lead Scoring", url: "/services#ai-marketing", icon: BarChart3 },
-          { name: "Content Generation", url: "/services#ai-marketing", icon: PenTool },
-          { name: "Campaign Optimization", url: "/services#ai-marketing", icon: FlaskConical },
-          { name: "Event Automation", url: "/services#ai-marketing", icon: CalendarCheck },
-        ],
-      },
-      {
-        category: "Custom Software",
-        url: "/services#software-development",
-        icon: Globe,
-        services: [
-          { name: "Mobile Apps", url: "/services#software-development", icon: Smartphone },
-          { name: "SaaS Platforms", url: "/services#software-development", icon: Cloud },
-          { name: "Web Applications", url: "/services#software-development", icon: Globe },
-          { name: "UI/UX Design", url: "/services#software-development", icon: Palette },
-          { name: "E-Commerce", url: "/services#software-development", icon: ShoppingCart },
-          { name: "Enterprise Software", url: "/services#software-development", icon: Building2 },
-        ],
-      },
-      {
-        category: "Product & Startups",
-        url: "/services#startup-services",
-        icon: Rocket,
-        services: [
-          { name: "Moonship MVP", url: "/services#startup-services", icon: Rocket },
-          { name: "CTO as a Service", url: "/services#startup-services", icon: UserCog },
-          { name: "Startup AI Toolkit", url: "/services#startup-services", icon: Lightbulb },
-          { name: "Go-To-Market Strategy", url: "/services#startup-services", icon: Target },
-        ],
-      },
-      {
-        category: "Marketing",
-        url: "/services#marketing-solutions",
-        icon: Megaphone,
-        services: [
-          { name: "AI-Powered Marketing", url: "/services#marketing-solutions", icon: Sparkles },
-          { name: "Advertising", url: "/services#marketing-solutions", icon: Megaphone },
-          { name: "Email Campaigns", url: "/services#marketing-solutions", icon: Mail },
-          { name: "Content & SEO", url: "/services#marketing-solutions", icon: FileText },
-          { name: "Social Media", url: "/services#marketing-solutions", icon: Share2 },
-          { name: "Webinars & Events", url: "/services#marketing-solutions", icon: Presentation },
-        ],
-      },
-    ],
-  },
+  { name: "Solutions", url: "/solutions", icon: Layers },
   { name: "AI Builders Club", url: "/ai-builders-club", icon: Users },
   { name: "Case Studies", url: "/case-studies", icon: Briefcase },
-  {
-    name: "Consulting",
-    url: "/consulting",
-    icon: Phone,
-    megaMenu: [
-      {
-        category: "AI Solutions",
-        url: "/consulting#ai-solutions",
-        icon: Bot,
-        services: [],
-      },
-      {
-        category: "Moonship MVP",
-        url: "/consulting#moonship",
-        icon: Rocket,
-        services: [],
-      },
-      {
-        category: "CTO as a Service",
-        url: "/consulting#cto",
-        icon: Brain,
-        services: [],
-      },
-      {
-        category: "Custom Development",
-        url: "/consulting#enterprise",
-        icon: Code2,
-        services: [],
-      },
-    ],
-  },
   { name: "Blog", url: "/blog", icon: FileText },
   { name: "About", url: "/about", icon: User },
 ]
 
 const mobileNavLinks = [
   { name: "Home", url: "/", icon: Home },
-  { name: "Services", url: "/services", icon: Layers },
+  { name: "Solutions", url: "/solutions", icon: Layers },
   { name: "AI Builders Club", url: "/ai-builders-club", icon: Users },
   { name: "Case Studies", url: "/case-studies", icon: Briefcase },
-  { name: "Consulting", url: "/consulting", icon: Phone },
   { name: "Blog", url: "/blog", icon: FileText },
   { name: "About", url: "/about", icon: User },
 ]

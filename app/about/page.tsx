@@ -115,7 +115,7 @@ export default function AboutPage() {
             <Button href="/ai-builders-club">
               Join AI Builders Club
             </Button>
-            <Button href="/consulting" variant="outlined">
+            <Button href="/solutions" variant="outlined">
               Work With Me
             </Button>
           </div>
