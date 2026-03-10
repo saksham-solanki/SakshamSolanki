@@ -62,12 +62,12 @@ Plans:
   3. Daily posting cadence is defined with 4 content pillars (Results, Process, Contrarian, Industry Insight) and 30 post drafts are ready
   4. Outbound DM playbook exists with connection request templates, engage-first sequences, and warm-to-pitch progression
   5. ICP targeting criteria are defined for Sales Navigator and a daily outbound workflow (10-15 prospects/day) is documented
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md — LinkedIn profile rewrite (headline, about, banner brief, featured) and 7-day warmup content sequence
+- [ ] 03-02-PLAN.md — Daily posting cadence, content templates, and 30 LinkedIn post drafts
+- [ ] 03-03-PLAN.md — Outbound DM playbook, Sales Navigator targeting, daily workflow, and network reactivation
 
 ### Phase 4: Sales Process and Conversion
 **Goal**: When discovery calls happen, Saksham has a complete conversion infrastructure -- from pre-call prep through proposal to follow-up -- plus a warm pipeline from past clients
