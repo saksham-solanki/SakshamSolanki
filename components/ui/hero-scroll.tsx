@@ -25,26 +25,25 @@ export function HeroScroll() {
         {/* Left content */}
         <div className="flex-1 p-4 sm:p-8 md:p-12 lg:p-16 relative z-10 flex flex-col justify-center">
           <p className="text-caption uppercase tracking-[0.15em] text-accent font-medium mb-4">
-            AI Automation Systems Architect
+            AI Systems Partner
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-hero font-black text-text-primary tracking-tight">
-            I build AI systems<br />
-            <span className="text-accent">that work.</span>
+            AI systems that deliver<br />
+            <span className="text-accent">measurable ROI.</span>
           </h1>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-text-secondary leading-relaxed max-w-lg">
-            Not demos. Not slide decks. Deployed infrastructure that generates results.
-            AI automation consulting for B2B companies ready to ship.
+            We design, build, and deploy AI infrastructure that reduces costs and accelerates operations. 50+ production systems. $2M+ in documented results.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
             <InteractiveHoverButton
-              text="Join AI Builders Club"
+              text="Book a Strategy Call"
               className="w-full sm:w-56 text-base py-3.5 border-accent"
-              onClick={() => router.push("/ai-builders-club")}
+              onClick={() => router.push("/solutions#contact")}
             />
             <InteractiveHoverButton
-              text="Book a Call"
+              text="View Results"
               className="w-full sm:w-44 text-base py-3.5 border-accent"
-              onClick={() => router.push("/consulting")}
+              onClick={() => router.push("/case-studies")}
             />
           </div>
           <div className="mt-10 flex flex-wrap items-center gap-6 text-text-tertiary text-sm">
