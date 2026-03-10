@@ -19,11 +19,11 @@ Requirements for the 30-day sprint. Each maps to roadmap phases.
 
 - [x] **WEB-01**: Homepage hero rewritten with outcome-focused headline, premium positioning, zero small-ticket signals
 - [x] **WEB-02**: New /solutions page replacing /consulting — outcome-framed offer ladder, "Book a Strategy Call" CTA, NO pricing displayed
-- [ ] **WEB-03**: 3-5 case studies reframed around dollar ROI and business outcomes (not just technical metrics like "84% reduction")
+- [x] **WEB-03**: 3-5 case studies reframed around dollar ROI and business outcomes (not just technical metrics like "84% reduction")
 - [x] **WEB-04**: Anti-feature cleanup — remove all hourly pricing references, "affordable" language, generic service lists, stock AI imagery
 - [x] **WEB-05**: Client logo bar with social proof metrics (systems deployed, industries served, hours saved)
 - [x] **WEB-06**: "How We Work" section on /solutions — Diagnose → Architect → Build → Deploy → Optimize with clear process
-- [ ] **WEB-07**: Pre-qualification form replacing generic contact form — filters tire-kickers before call booking
+- [x] **WEB-07**: Pre-qualification form replacing generic contact form — filters tire-kickers before call booking
 
 ### LinkedIn — Reactivation & Pipeline
 
@@ -93,11 +93,11 @@ Deferred to after first 2-3 deals close. Tracked but not in current roadmap.
 | OFFER-05 | Phase 1 | Complete |
 | WEB-01 | Phase 2 | Complete |
 | WEB-02 | Phase 2 | Complete |
-| WEB-03 | Phase 2 | Pending |
+| WEB-03 | Phase 2 | Complete |
 | WEB-04 | Phase 2 | Complete |
 | WEB-05 | Phase 2 | Complete |
 | WEB-06 | Phase 2 | Complete |
-| WEB-07 | Phase 2 | Pending |
+| WEB-07 | Phase 2 | Complete |
 | LI-01 | Phase 3 | Pending |
 | LI-02 | Phase 3 | Pending |
 | LI-03 | Phase 3 | Pending |
