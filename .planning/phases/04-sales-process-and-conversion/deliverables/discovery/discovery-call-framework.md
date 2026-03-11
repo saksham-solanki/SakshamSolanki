@@ -198,7 +198,7 @@ This connects directly back to COI. Listen for:
 ### ICP-Specific Language Variants
 
 **PE Firms / Portfolio Companies:**
-- Use: EBITDA impact, margin improvement, exit multiples, portfolio-level ROI, operational leverage
+- Use: EBITDA impact, margin improvement, exit multiples, portfolio-level ROI, operational efficiency at scale
 - Frame: "This directly impacts EBITDA by $[amount]. Across [N] portfolio companies, we're talking about $[portfolio-wide impact] in margin improvement."
 - Reference: operating partner as champion, portfolio CEO as buyer
 - Urgency: "Every quarter of delay is $[quarterly COI] off the EBITDA line."
