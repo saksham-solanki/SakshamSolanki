@@ -38,11 +38,11 @@ Requirements for the 30-day sprint. Each maps to roadmap phases.
 ### Sales Process & Conversion
 
 - [x] **SALES-01**: Discovery call framework — diagnostic questions, qualification criteria (budget, timeline, authority, need), 70% listening structure
-- [ ] **SALES-02**: 7-section proposal template — exec summary, problem analysis, solution, deliverables, timeline, investment, team & next steps
+- [x] **SALES-02**: 7-section proposal template — exec summary, problem analysis, solution, deliverables, timeline, investment, team & next steps
 - [x] **SALES-03**: Pre-call diagnostic questionnaire — 5-7 questions sent before discovery call to filter and prepare
 - [x] **SALES-04**: Past client outreach plan — audit all 14 case study clients for expansion opportunities, personalized re-engagement messages
-- [ ] **SALES-05**: Follow-up email sequence — 5 emails over 21 days for stalled deals after discovery calls
-- [ ] **SALES-06**: Objection handling scripts — pricing objections, "we can find cheaper," "need to think about it," "need committee approval"
+- [x] **SALES-05**: Follow-up email sequence — 5 emails over 21 days for stalled deals after discovery calls
+- [x] **SALES-06**: Objection handling scripts — pricing objections, "we can find cheaper," "need to think about it," "need committee approval"
 - [x] **SALES-07**: CRM pipeline setup in HubSpot — stages: Lead → Qualified → Discovery Call → Proposal → Negotiation → Closed Won/Lost
 
 ## v2 Requirements
@@ -106,11 +106,11 @@ Deferred to after first 2-3 deals close. Tracked but not in current roadmap.
 | LI-06 | Phase 3 | Pending |
 | LI-07 | Phase 3 | Pending |
 | SALES-01 | Phase 4 | Complete |
-| SALES-02 | Phase 4 | Pending |
+| SALES-02 | Phase 4 | Complete |
 | SALES-03 | Phase 4 | Complete |
 | SALES-04 | Phase 4 | Complete |
-| SALES-05 | Phase 4 | Pending |
-| SALES-06 | Phase 4 | Pending |
+| SALES-05 | Phase 4 | Complete |
+| SALES-06 | Phase 4 | Complete |
 | SALES-07 | Phase 4 | Complete |
 
 **Coverage:**
