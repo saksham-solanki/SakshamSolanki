@@ -80,12 +80,12 @@ Plans:
   4. All 14 past case study clients are audited for expansion opportunities with personalized re-engagement messages drafted
   5. Post-call conversion assets exist: 5-email follow-up sequence for stalled deals, objection handling scripts, and CRM pipeline is configured in HubSpot
 
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
-- [ ] 04-03: TBD
+- [ ] 04-01-PLAN.md — Discovery call framework (COI diagnostic + BANT qualification) and pre-call diagnostic questionnaire
+- [ ] 04-02-PLAN.md — 7-section proposal template, 5-email follow-up sequence, and objection handling scripts
+- [ ] 04-03-PLAN.md — Past client outreach plan (16 client audit + re-engagement messages) and HubSpot pipeline setup
 
 ## Progress
 
