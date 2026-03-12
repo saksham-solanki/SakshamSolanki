@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Linkedin, Twitter, Youtube } from 'lucide-react'
 import { siteConfig, navLinks } from '@/lib/constants'
 import { Container } from '@/components/ui/Container'
+import { Logo } from '@/components/ui/Logo'
 
 export function Footer() {
   return (
@@ -10,8 +11,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="text-text-primary font-bold text-xl tracking-tight">
-              Saksham<span className="text-accent">.</span>
+            <Link href="/" className="inline-block">
+              <Logo size="md" />
             </Link>
             <p className="mt-3 text-text-tertiary text-sm max-w-xs">
               Designing and deploying AI systems that deliver measurable business results.

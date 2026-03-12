@@ -7,6 +7,7 @@ import {
 } from "lucide-react"
 import { NavBar } from "@/components/ui/tubelight-navbar"
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
+import { Logo } from "@/components/ui/Logo"
 import { siteConfig } from "@/lib/constants"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -53,8 +54,8 @@ export function TubelightNav() {
     <>
       {/* Fixed top bar: Logo left | Nav center | CTA right — desktop */}
       <div className="fixed top-0 left-0 right-0 z-50 hidden sm:flex items-center justify-between px-6 h-[72px] pointer-events-none">
-        <Link href="/" className="text-text-primary font-bold text-xl tracking-tight shrink-0 pointer-events-auto">
-          Saksham<span className="text-accent">.</span>
+        <Link href="/" className="shrink-0 pointer-events-auto">
+          <Logo size="md" />
         </Link>
         <div className="w-[120px]" />
       </div>
@@ -81,8 +82,8 @@ export function TubelightNav() {
       {/* ===== MOBILE NAV ===== */}
       {/* Mobile top bar: logo left, hamburger right */}
       <div className="fixed top-0 left-0 right-0 z-50 sm:hidden flex items-center justify-between px-5 h-14 bg-bg-primary/90 backdrop-blur-lg border-b border-border/50">
-        <Link href="/" className="text-text-primary font-bold text-lg tracking-tight">
-          Saksham<span className="text-accent">.</span>
+        <Link href="/" className="block">
+          <Logo size="sm" />
         </Link>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
